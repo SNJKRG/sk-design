@@ -1,0 +1,65 @@
+{
+  "brand": "SK DESIGN",
+  "locale": "ru",
+  "contact": {
+    "label": "Обсудить проект ↗",
+    "href": "https://t.me/snj_krg",
+    "handle": "@snj_krg"
+  },
+  "logo": "assets/brand/logo-transparent.png",
+  "desktop_target": "reference/target-desktop.png",
+  "primary_reference": "https://obys.agency/",
+  "gallery": {
+    "initial_project_id": "01-sf-diamonds",
+    "order": [
+      "01-sf-diamonds",
+      "02-navat",
+      "04-bugu",
+      "11-muras-nuru",
+      "07-sora",
+      "14-tochno-merch",
+      "03-nakta",
+      "05-bogatovsoft",
+      "06-ai-consultant",
+      "08-mstarter",
+      "09-elit-stom-med",
+      "10-tochno-careers",
+      "12-ushoo",
+      "13-stay-safe",
+      "15-parkovki-zhk",
+      "16-tochno-generator"
+    ],
+    "inactive_filter": "grayscale(1)",
+    "inactive_opacity": 0.5,
+    "active_filter": "grayscale(0)",
+    "active_opacity": 1,
+    "loop": true,
+    "show_view_switcher": false,
+    "show_corner_counter": false
+  },
+  "logo_alpha_bounds": {
+    "left": 221,
+    "top": 166,
+    "right": 1314,
+    "bottom": 873,
+    "note": "Проверить alpha bbox при подготовке production-изображения; исходный PNG содержит прозрачные поля."
+  },
+  "routes": {
+    "home": "/",
+    "case_pattern": "/projects/:slug"
+  },
+  "motion": {
+    "status": "starting_values_to_tune_against_reference_not_measured_obys_values",
+    "filter_ms": 400,
+    "metadata_ms": 200,
+    "route_transition_ms": 650,
+    "snap_ms": 650
+  },
+  "unknowns_to_omit": [
+    "owner_role",
+    "design_author",
+    "technology_stack",
+    "launch_date",
+    "measured_results"
+  ]
+}

@@ -1,0 +1,50 @@
+- banner:
+  - link "Парковки Онлайн":
+    - /url: /
+    - img "Парковки"
+    - generic: Онлайн
+  - navigation:
+    - link "ЖК Босфор":
+      - /url: /bosphor
+  - text: Краснодар
+  - link "8 861 205 16 90":
+    - /url: tel:+78612051690
+    - generic: 8 861 205 16 90
+- complementary:
+  - generic: Этаж
+  - generic: "8"
+  - button "1 этаж":
+    - generic: "1"
+    - generic: этаж
+  - button "2 этаж":
+    - generic: "2"
+    - generic: этаж
+  - button "3 этаж":
+    - generic: "3"
+    - generic: этаж
+  - button "4 этаж":
+    - generic: "4"
+    - generic: этаж
+  - button "5 этаж":
+    - generic: "5"
+    - generic: этаж
+  - button "6 этаж":
+    - generic: "6"
+    - generic: этаж
+  - button "7 этаж":
+    - generic: "7"
+    - generic: этаж
+  - button "8 этаж":
+    - generic: "8"
+    - generic: этаж
+- generic: ЖК Босфор
+- generic: 1 этаж
+- generic: Свободно
+- generic: "0"
+- generic: Бронь
+- generic: "0"
+- generic: Продано
+- generic: "0"
+- generic: Недоступно
+- generic: "17"
+- complementary

@@ -1,0 +1,1110 @@
+{
+  "schema_version": 2,
+  "captured_at": "2026-10-18",
+  "capture_timezone": "Europe/Istanbul",
+  "purpose": "Контент 16 кейсов для портфолио студии SK DESIGN",
+  "owner": {
+    "name": null,
+    "brand_name": "SK DESIGN",
+    "contact": {
+      "type": "telegram",
+      "label": "@snj_krg",
+      "url": "https://t.me/snj_krg"
+    },
+    "positioning": "Веб-разработка и создание сайтов"
+  },
+  "project_count": 16,
+  "projects": [
+    {
+      "id": "01-sf-diamonds",
+      "url": "https://sf-diamonds.vercel.app",
+      "title": "SF Diamonds",
+      "industry": "Ювелирные украшения",
+      "project_type": "Каталог",
+      "languages": [
+        "ru",
+        "en"
+      ],
+      "summary": "Ювелирный каталог с крупной предметной подачей, коллекциями украшений и подбором через мессенджеры.",
+      "description": "Сайт представляет украшения с бриллиантами и часы. Главная ведёт от первого экрана с кольцом к категориям, подборке изделий с ценами и индивидуальному заказу. Для детального знакомства предусмотрены карточки украшений и отдельные информационные страницы.",
+      "features": [
+        "Категории украшений и часов",
+        "Карточки изделий с характеристиками и ценами",
+        "Интерфейс сохранения в подборку",
+        "Раздел индивидуальных заказов",
+        "Переходы в WhatsApp и Telegram; переключение RU/EN"
+      ],
+      "visual_direction": "Тёмно-синий первый экран, крупное кольцо, светлая тонкая типографика; светлые блоки каталога.",
+      "notes": "",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://sf-diamonds.vercel.app/ru/",
+      "observed_title": "Ювелирные украшения с бриллиантами в Москве SF Diamonds",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": true,
+      "cover": "projects/01-sf-diamonds/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/01-sf-diamonds/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/01-sf-diamonds/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/01-sf-diamonds/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/01-sf-diamonds/project.md",
+      "slug": "sf-diamonds",
+      "case_route": "/projects/sf-diamonds",
+      "display_category": "Ювелирный каталог",
+      "source_url": "https://sf-diamonds.vercel.app",
+      "gallery_cover": "projects/01-sf-diamonds/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "02-navat",
+      "url": "https://navat-seven.vercel.app",
+      "title": "NAVAT Dubai",
+      "industry": "Рестораны",
+      "project_type": "Имиджевый сайт",
+      "languages": [
+        "en"
+      ],
+      "summary": "Сайт чайханы в Дубае: история Шёлкового пути, блюда, интерьер и планирование визита.",
+      "description": "Англоязычный сайт NAVAT Dubai знакомит с центральноазиатской кухней и пространством ресторана. Вступительная сцена с караваном переходит к меню с ценами, фотографиям зала, истории бренда и контактам.",
+      "features": [
+        "Вступительная визуальная история",
+        "Блюда и меню по разделам",
+        "Фотографии интерьера",
+        "Контакты, часы работы и маршрут",
+        "Ссылка на доставку через Deliveroo"
+      ],
+      "visual_direction": "Тёмно-зелёный фон, золотистые акценты, орнамент и арочная композиция; крупные фотографии еды.",
+      "notes": "Обложка фиксирует одну сцену вступления. Анимация и её длительность не передаются статическим изображением.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://navat-seven.vercel.app/",
+      "observed_title": "NAVAT Dubai: Central Asian teahouse in Downtown Dubai",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": true,
+      "cover": "projects/02-navat/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/02-navat/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/02-navat/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/02-navat/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/02-navat/screenshots/05-room.jpg",
+          "caption": "Интерьер и рассказ о пространстве NAVAT",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/02-navat/project.md",
+      "slug": "navat-dubai",
+      "case_route": "/projects/navat-dubai",
+      "display_category": "Ресторан в Дубае",
+      "source_url": "https://navat-seven.vercel.app",
+      "gallery_cover": "projects/02-navat/screenshots/05-room.jpg"
+    },
+    {
+      "id": "03-nakta",
+      "url": "https://nakta.vercel.app",
+      "title": "NAKTA",
+      "industry": "Рестораны",
+      "project_type": "Имиджевый сайт",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Сайт этно-ресторана с меню кыргызской кухни, банкетными залами и запросом стола.",
+      "description": "Сайт NAKTA соединяет атмосферную подачу ресторана с практическими разделами для гостей. Блюда, фотографии залов и детали сервировки помогают познакомиться с местом, а форма готовит запрос на бронирование в WhatsApp.",
+      "features": [
+        "Вступление и фирменная символика",
+        "Блюда с ценами и отдельное меню",
+        "Презентация залов",
+        "Форма запроса стола",
+        "Контакты и маршрут в 2GIS"
+      ],
+      "visual_direction": "Тёплый кремовый фон, бордовые кнопки, золотистая эмблема, шрифт с засечками и большие фотографии кухни.",
+      "notes": "Бронь подтверждает администратор. Работа отправки запроса не проверялась.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://nakta.vercel.app/",
+      "observed_title": "Этно-ресторан NAKTA в Кок-Жаре готовит кыргызскую кухню и принимает банкеты до 110 гостей",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": false,
+      "cover": "projects/03-nakta/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/03-nakta/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/03-nakta/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/03-nakta/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/03-nakta/project.md",
+      "slug": "nakta",
+      "case_route": "/projects/nakta",
+      "display_category": "Сайт ресторана",
+      "source_url": "https://nakta.vercel.app",
+      "gallery_cover": "projects/03-nakta/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "04-bugu",
+      "url": "https://bugu-cavf.vercel.app",
+      "title": "BUGU",
+      "industry": "Рестораны",
+      "project_type": "Имиджевый сайт",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Сайт современной кыргызской кухни с иллюстрированной историей и переходом к меню.",
+      "description": "Главная BUGU выстроена как история в пяти сценах: костёр, музыка, общий стол и работа рук. Иллюстрации и текст раскрывают культурную тему ресторана; далее посетитель переходит к блюдам, залу и бронированию.",
+      "features": [
+        "История в пяти иллюстрированных сценах",
+        "Отдельная страница меню",
+        "Подборка блюд с ценами",
+        "Фотографии зала",
+        "Запрос бронирования через WhatsApp или звонок"
+      ],
+      "visual_direction": "Каменная фактура, карандашные иллюстрации, спокойная серо-бежевая палитра, крупные заголовки с засечками.",
+      "notes": "Первый блок использует сцены при прокрутке: несколько похожих кадров могут показывать разные состояния одной композиции.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://bugu-cavf.vercel.app/",
+      "observed_title": "BUGU | Современная кыргызская кухня в Бишкеке",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": true,
+      "cover": "projects/04-bugu/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/04-bugu/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/04-bugu/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/04-bugu/screenshots/03-detail.jpg",
+          "caption": "Отдельная страница меню BUGU",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/04-bugu/project.md",
+      "slug": "bugu",
+      "case_route": "/projects/bugu",
+      "display_category": "Современная кыргызская кухня",
+      "source_url": "https://bugu-cavf.vercel.app",
+      "gallery_cover": "projects/04-bugu/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "05-bogatovsoft",
+      "url": "https://bogatovsoft.ru",
+      "title": "Bogatov Soft",
+      "industry": "IT и AI",
+      "project_type": "Корпоративный сайт",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Сайт программных продуктов для девелоперов с демонстрацией сценариев и обсуждением пилота.",
+      "description": "Корпоративный сайт Bogatov Soft представляет продукты для продаж недвижимости и связанных процессов. Каждый продукт объясняется через рабочую ситуацию, интерфейс и следующий шаг: подробнее, демонстрация или обсуждение пилота.",
+      "features": [
+        "Семь продуктовых направлений на главной",
+        "Иллюстрация жилого квартала",
+        "Демонстрационные интерфейсы продуктов",
+        "Кейсы и материалы",
+        "Обращение по пилотному проекту"
+      ],
+      "visual_direction": "Светлая палитра с синими акцентами, объёмный городской квартал, карточки и интерфейсные демонстрации.",
+      "notes": "Числа и результаты на исходном сайте относятся к продуктам и их внедрениям. Не представлять их результатами разработки этого сайта.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://bogatovsoft.ru/",
+      "observed_title": "Bogatov Soft: софт для девелопера от лида до документа",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": false,
+      "cover": "projects/05-bogatovsoft/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/05-bogatovsoft/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/05-bogatovsoft/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/05-bogatovsoft/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/05-bogatovsoft/project.md",
+      "slug": "bogatovsoft",
+      "case_route": "/projects/bogatovsoft",
+      "display_category": "Программные продукты",
+      "source_url": "https://bogatovsoft.ru",
+      "gallery_cover": "projects/05-bogatovsoft/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "06-ai-consultant",
+      "url": "https://ai-consultant.bogatovsoft.com",
+      "title": "AI Consultant — Bogatov Soft",
+      "industry": "IT и AI",
+      "project_type": "Продуктовый лендинг",
+      "languages": [
+        "en",
+        "ru"
+      ],
+      "summary": "Лендинг AI-консультанта по недвижимости с демонстрацией подбора квартир и сценария передачи клиента.",
+      "description": "Продуктовая страница объясняет, как AI-консультант отвечает на вопросы покупателей недвижимости, показывает варианты и передаёт обращение менеджеру. На странице есть примеры диалогов, блок демонстрации и описание запуска пилота.",
+      "features": [
+        "Пример переписки с карточками квартир",
+        "Раздел демонстрации консультанта",
+        "Сценарий от вопроса до передачи контакта",
+        "Каналы общения и запуск пилота",
+        "Переключатель языка"
+      ],
+      "visual_direction": "Белый фон, сине-фиолетовые акценты, мокап телефона, иллюстрации и карточки сообщений.",
+      "notes": "Главная при просмотре открылась на английском, демонстрационные запросы — на русском. Диалог с ботом и передача контактов не запускались.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://ai-consultant.bogatovsoft.com/",
+      "observed_title": "AI Assistant | Bogatov Soft",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": false,
+      "cover": "projects/06-ai-consultant/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/06-ai-consultant/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/06-ai-consultant/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/06-ai-consultant/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/06-ai-consultant/screenshots/04-full-page.jpg",
+          "caption": "Главная страница целиком после прокрутки",
+          "width": 1280,
+          "height": 5752,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/06-ai-consultant/project.md",
+      "slug": "ai-consultant",
+      "case_route": "/projects/ai-consultant",
+      "display_category": "AI-консультант",
+      "source_url": "https://ai-consultant.bogatovsoft.com",
+      "gallery_cover": "projects/06-ai-consultant/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "07-sora",
+      "url": "https://sora.bogatovsoft.com",
+      "title": "Sora",
+      "industry": "IT и AI",
+      "project_type": "Продуктовый лендинг",
+      "languages": [
+        "ru",
+        "en"
+      ],
+      "summary": "Сайт голосового AI-менеджера для агентств недвижимости и девелоперов.",
+      "description": "Лендинг Sora показывает путь входящего звонка: ответ помощника, уточнение запроса, передача менеджеру и карточка обращения. Отдельные блоки посвящены языкам общения, подключению и проверке на звонках конкретного проекта.",
+      "features": [
+        "Кнопка демонстрационного разговора",
+        "Интерактивные этапы обработки звонка",
+        "Визуализация языков и географии",
+        "Описание пилотного подключения",
+        "Форма обращения и FAQ"
+      ],
+      "visual_direction": "Почти чёрный фон, фиолетовое свечение, волновая графика, глобус и крупная белая типографика.",
+      "notes": "Это Sora по адресу sora.bogatovsoft.com: сервис голосового менеджера по недвижимости. Не путать с одноимённым продуктом OpenAI. Звонок и доступ к микрофону не запускались.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://sora.bogatovsoft.com/",
+      "observed_title": "Sora: ИИ-менеджер для агентств недвижимости и девелоперов",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": true,
+      "cover": "projects/07-sora/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/07-sora/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/07-sora/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/07-sora/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/07-sora/project.md",
+      "slug": "sora",
+      "case_route": "/projects/sora",
+      "display_category": "Голосовой AI-менеджер",
+      "source_url": "https://sora.bogatovsoft.com",
+      "gallery_cover": "projects/07-sora/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "08-mstarter",
+      "url": "https://mstarter.kz",
+      "title": "M-Starter",
+      "industry": "Автозапчасти",
+      "project_type": "Интернет-магазин",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Магазин запчастей для стартеров и генераторов с каталогом и презентацией собственного сервиса.",
+      "description": "Сайт M-Starter объединяет каталог автомобильных комплектующих и информацию об автосервисе в Костанае. На главной представлены категории деталей, поиск, вход в аккаунт, корзина и контактные данные магазина и сервиса.",
+      "features": [
+        "Категории запчастей",
+        "Поиск по сайту",
+        "Вход в аккаунт и корзина в интерфейсе",
+        "Баннеры предложений",
+        "Раздел собственного сервиса и контакты"
+      ],
+      "visual_direction": "Белый фон, тёмно-синие акценты, многоуровневая шапка, товарные категории с предметными изображениями.",
+      "notes": "В подвале указано Designed by copylobby.art. Уточнить авторство дизайна и собственную роль; не приписывать себе чужой дизайн. Заказ, оплату и авторизацию не проверяли.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://mstarter.kz/",
+      "observed_title": "M-Starter",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": false,
+      "cover": "projects/08-mstarter/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/08-mstarter/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/08-mstarter/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/08-mstarter/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/08-mstarter/screenshots/04-full-page.jpg",
+          "caption": "Главная страница целиком после прокрутки",
+          "width": 1280,
+          "height": 2033,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/08-mstarter/project.md",
+      "slug": "mstarter",
+      "case_route": "/projects/mstarter",
+      "display_category": "Каталог автозапчастей",
+      "source_url": "https://mstarter.kz",
+      "gallery_cover": "projects/08-mstarter/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "09-elit-stom-med",
+      "url": "https://elit-stom-med.ru",
+      "title": "Re Stom",
+      "industry": "Медицина",
+      "project_type": "Сайт клиники",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Сайт стоматологического центра: направления лечения, врачи, акции и запись на приём.",
+      "description": "Сайт по адресу elit-stom-med.ru сейчас представляет стоматологический центр Re Stom в Санкт-Петербурге. Структура помогает перейти от обзора клиники к услугам, команде, ценам и контактам.",
+      "features": [
+        "Разделы стоматологических услуг",
+        "Страницы врачей и цен в навигации",
+        "Блоки отзывов и специальных предложений",
+        "Фотографии клиники",
+        "Призывы записаться на приём"
+      ],
+      "visual_direction": "Белый фон, голубые акценты, мягкие формы, медицинские фотографии и карточки услуг.",
+      "notes": "Имя проекта выбрано по текущему title страницы. Исходный адрес сохранён. Точное название кейса уточнить у владельца; медицинские утверждения и рейтинги не переносить в кейс разработки как собственные достижения.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://elit-stom-med.ru/",
+      "observed_title": "Cтоматология Re Stom - Ортодонтический центр в СПб",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": false,
+      "cover": "projects/09-elit-stom-med/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/09-elit-stom-med/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/09-elit-stom-med/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/09-elit-stom-med/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/09-elit-stom-med/screenshots/04-full-page.jpg",
+          "caption": "Главная страница целиком после прокрутки",
+          "width": 1280,
+          "height": 7771,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/09-elit-stom-med/project.md",
+      "slug": "re-stom",
+      "case_route": "/projects/re-stom",
+      "display_category": "Стоматологическая клиника",
+      "source_url": "https://elit-stom-med.ru",
+      "gallery_cover": "projects/09-elit-stom-med/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "10-tochno-careers",
+      "url": "https://tochno-careers.ru",
+      "title": "Карьера в ТОЧНО",
+      "industry": "HR и карьера",
+      "project_type": "Карьерный сайт",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Карьерный сайт девелопера с направлениями вакансий и рассказом о работе в компании.",
+      "description": "Сайт знакомит кандидатов с ГК ТОЧНО и ведёт к вакансиям по направлениям. На главной собраны сведения о компании, география, корпоративная культура и возможности для сотрудников.",
+      "features": [
+        "Переходы к вакансиям по направлениям",
+        "Страницы отдельных карьерных направлений",
+        "География компании",
+        "Презентация корпоративной культуры",
+        "Переход ко всем вакансиям"
+      ],
+      "visual_direction": "Белый фон, чёрная типографика, цветные блоки, фотографии сотрудников и карта присутствия.",
+      "notes": "Числа о компании и награды работодателя — содержание клиентского сайта, а не результаты его веб-разработки.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://tochno-careers.ru/",
+      "observed_title": "Карьера в ТОЧНО",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": false,
+      "cover": "projects/10-tochno-careers/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/10-tochno-careers/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/10-tochno-careers/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/10-tochno-careers/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/10-tochno-careers/project.md",
+      "slug": "tochno-careers",
+      "case_route": "/projects/tochno-careers",
+      "display_category": "Карьерный сайт",
+      "source_url": "https://tochno-careers.ru",
+      "gallery_cover": "projects/10-tochno-careers/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "11-muras-nuru",
+      "url": "https://muras-nuru.vercel.app",
+      "title": "Muras Nuru BLVD",
+      "industry": "Недвижимость",
+      "project_type": "Сайт жилого комплекса",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Сайт жилого квартала с архитектурной подачей, планировками и обращением в отдел продаж.",
+      "description": "Сайт Muras Nuru BLVD знакомит с жилым кварталом в Бишкеке через архитектуру, благоустройство и культурные детали. Страница ведёт к подбору планировки, расположению, условиям покупки и контактам.",
+      "features": [
+        "Визуальная презентация архитектуры",
+        "Разделы этапов строительства",
+        "Интерфейс выбора планировок",
+        "Расположение и условия покупки",
+        "Новости строительства и обращение в отдел продаж"
+      ],
+      "visual_direction": "Светлый фон, зелёные акценты, шрифт с засечками, сочетание архитектурных визуализаций и иллюстраций гор.",
+      "notes": "Проектные визуализации и художественные иллюстрации подписаны на сайте. Не представлять их фотографиями построенных объектов.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://muras-nuru.vercel.app/",
+      "observed_title": "ЖК Muras Nuru BLVD в Бишкеке: квартиры и планировки",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": true,
+      "cover": "projects/11-muras-nuru/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/11-muras-nuru/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/11-muras-nuru/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/11-muras-nuru/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/11-muras-nuru/screenshots/04-full-page.jpg",
+          "caption": "Главная страница целиком после прокрутки",
+          "width": 1280,
+          "height": 15249,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/11-muras-nuru/project.md",
+      "slug": "muras-nuru",
+      "case_route": "/projects/muras-nuru",
+      "display_category": "Жилой квартал",
+      "source_url": "https://muras-nuru.vercel.app",
+      "gallery_cover": "projects/11-muras-nuru/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "12-ushoo",
+      "url": "https://ushoo.vercel.app",
+      "title": "Ushoo",
+      "industry": "Маркетинг",
+      "project_type": "Сайт агентства",
+      "languages": [
+        "en"
+      ],
+      "summary": "Англоязычный сайт агентства TikTok Shop с услугами для продавцов и инфлюенсеров.",
+      "description": "Сайт Ushoo представляет услуги по запуску и продвижению магазинов в TikTok Shop. Главная для продавцов раскрывает направления работы, процесс, примеры результатов и условия сотрудничества; отдельная ссылка ведёт к версии для инфлюенсеров.",
+      "features": [
+        "Разделы для sellers и influencers",
+        "Карточки услуг",
+        "Описание этапов сотрудничества",
+        "Блок кейса",
+        "Кнопки обращения и записи на звонок"
+      ],
+      "visual_direction": "Белый фон, розово-фиолетовые градиенты, крупные дуги и контрастные цветные карточки.",
+      "notes": "Показатели роста в маркетинговых блоках не подтверждают результат разработки сайта и не должны превращаться в метрики портфолио.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://ushoo.vercel.app/",
+      "observed_title": "Ushoo",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": false,
+      "cover": "projects/12-ushoo/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/12-ushoo/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/12-ushoo/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/12-ushoo/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/12-ushoo/screenshots/04-full-page.jpg",
+          "caption": "Главная страница целиком после прокрутки",
+          "width": 1551,
+          "height": 6670,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/12-ushoo/project.md",
+      "slug": "ushoo",
+      "case_route": "/projects/ushoo",
+      "display_category": "TikTok Shop агентство",
+      "source_url": "https://ushoo.vercel.app",
+      "gallery_cover": "projects/12-ushoo/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "13-stay-safe",
+      "url": "https://stay-safe-eight.vercel.app",
+      "title": "Stay Safe",
+      "industry": "Строительство",
+      "project_type": "Имиджевый лендинг",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Лендинг индивидуальных укрытий с презентацией подхода, возможностей и этапов строительства.",
+      "description": "Stay Safe представляет строительство частных укрытий под ключ. Главная последовательно раскрывает компанию, назначение пространства, варианты использования, преимущества и процесс работы, затем ведёт к обращению.",
+      "features": [
+        "Первый экран с крупной типографикой",
+        "Блок о компании",
+        "Разделы безопасности и возможностей",
+        "Этапы строительства",
+        "Контактный блок и консультация"
+      ],
+      "visual_direction": "Тёмный фон, крупная типографика с засечками, архитектурные изображения и крупный первый экран.",
+      "notes": "Утверждения о защитных свойствах и опыте компании относятся к содержанию исходного сайта; архив их не проверяет.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://stay-safe-eight.vercel.app/",
+      "observed_title": "Stay Safe",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": false,
+      "cover": "projects/13-stay-safe/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/13-stay-safe/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/13-stay-safe/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/13-stay-safe/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/13-stay-safe/screenshots/04-full-page.jpg",
+          "caption": "Главная страница целиком после прокрутки",
+          "width": 1310,
+          "height": 6662,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/13-stay-safe/project.md",
+      "slug": "stay-safe",
+      "case_route": "/projects/stay-safe",
+      "display_category": "Индивидуальные укрытия",
+      "source_url": "https://stay-safe-eight.vercel.app",
+      "gallery_cover": "projects/13-stay-safe/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "14-tochno-merch",
+      "url": "https://merch.snjkrg.tochnodev.ru",
+      "title": "ТОЧНО / ORBIT Showroom",
+      "industry": "Мода и e-commerce",
+      "project_type": "Интерактивное демо",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Демонстрационный showroom одежды с каталогом, подбором образа и интерфейсом AI-примерочной.",
+      "description": "Демо ТОЧНО / ORBIT объединяет визуальную примерочную и каталог одежды. В интерфейсе есть выбор погоды и стиля, подсказки на модели, фильтры категорий, избранное и корзина.",
+      "features": [
+        "Интерфейс загрузки фото для примерки",
+        "Выбор погоды и стиля",
+        "Подсказки на демонстрационной модели",
+        "Каталог с фильтрами",
+        "Избранное и корзина в интерфейсе"
+      ],
+      "visual_direction": "Светлая fashion-подача, модель в центре композиции, плавающие подписи вещей, чёрные кнопки и сетка каталога.",
+      "notes": "Сам сайт называет вещи, фото, цены и размеры демонстрационными. Показывать как демо/концепт. Фото не загружались; работа AI-примерки, оплаты и оформления заказа не проверялась.",
+      "delivery_status": "demo",
+      "observed_url": "https://merch.snjkrg.tochnodev.ru/",
+      "observed_title": "ТОЧНО showroom",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": true,
+      "cover": "projects/14-tochno-merch/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/14-tochno-merch/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/14-tochno-merch/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/14-tochno-merch/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/14-tochno-merch/screenshots/04-full-page.jpg",
+          "caption": "Главная страница целиком после прокрутки",
+          "width": 1280,
+          "height": 3741,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/14-tochno-merch/project.md",
+      "slug": "tochno-orbit",
+      "case_route": "/projects/tochno-orbit",
+      "display_category": "Демонстрационный showroom",
+      "source_url": "https://merch.snjkrg.tochnodev.ru",
+      "gallery_cover": "projects/14-tochno-merch/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "15-parkovki-zhk",
+      "url": "https://parkovki-zhk.ru",
+      "title": "Парковки Онлайн",
+      "industry": "Недвижимость",
+      "project_type": "Веб-сервис",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Сервис выбора парковки: каталог жилых комплексов и поэтажный план мест.",
+      "description": "Главная «Парковок Онлайн» предлагает выбрать жилой комплекс. На странице комплекса отображаются этажи, схема парковки и легенда статусов — свободно, бронь, продано и недоступно.",
+      "features": [
+        "Карточки жилых комплексов",
+        "Страница выбранного комплекса",
+        "Выбор этажа",
+        "Поэтажная схема парковки",
+        "Легенда статусов мест"
+      ],
+      "visual_direction": "Белый фон, зелёные акценты, карточки комплексов и крупная рабочая область плана.",
+      "notes": "Доступен интерфейс выбора. Реальное бронирование, синхронизацию наличия и оплату не проверяли.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://parkovki-zhk.ru/",
+      "observed_title": "Парковки Онлайн",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": false,
+      "cover": "projects/15-parkovki-zhk/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/15-parkovki-zhk/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1270,
+          "height": 714,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/15-parkovki-zhk/screenshots/04-full-page.jpg",
+          "caption": "Главная страница целиком после прокрутки",
+          "width": 1270,
+          "height": 829,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/15-parkovki-zhk/screenshots/05-parking-plan.jpg",
+          "caption": "Поэтажная схема парковки ЖК Босфор",
+          "width": 1270,
+          "height": 714,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/15-parkovki-zhk/project.md",
+      "slug": "parkovki-online",
+      "case_route": "/projects/parkovki-online",
+      "display_category": "Выбор парковочного места",
+      "source_url": "https://parkovki-zhk.ru",
+      "gallery_cover": "projects/15-parkovki-zhk/screenshots/01-cover.jpg"
+    },
+    {
+      "id": "16-tochno-generator",
+      "url": "https://tochno-generator.ru",
+      "title": "ТОЧНО Generator",
+      "industry": "Недвижимость",
+      "project_type": "Веб-приложение",
+      "languages": [
+        "ru"
+      ],
+      "summary": "Интерфейс каталога недвижимости с выбором проекта, литера и фильтрами помещений.",
+      "description": "ТОЧНО Generator показывает жилые проекты по городам и доступные типы недвижимости. После выбора проекта можно перейти к литерам или списку помещений с фильтрами по этажу, статусу, типу, комнатности, цене и площади.",
+      "features": [
+        "Фильтр городов и поиск проекта",
+        "Карточки проектов с типами помещений",
+        "Выбор литера",
+        "Режим списка помещений",
+        "Фильтры цены, площади и комнатности"
+      ],
+      "visual_direction": "Тёмный интерфейс с зелёными акцентами, архитектурные изображения, плотные карточки данных и панель фильтров.",
+      "notes": "Публичную часть просмотрели без входа. Админ-панель не открывали. Наличие генерации документов и её результат не подтверждены просмотром; название домена не считать доказательством функции.",
+      "delivery_status": "unconfirmed",
+      "observed_url": "https://tochno-generator.ru/",
+      "observed_title": "ТОЧНОgen",
+      "captured_at": "2026-10-18",
+      "capture_timezone": "Europe/Istanbul",
+      "owner_role": null,
+      "design_author": null,
+      "technology_stack": null,
+      "launch_date": null,
+      "measured_results": null,
+      "featured_recommendation": false,
+      "cover": "projects/16-tochno-generator/screenshots/01-cover.jpg",
+      "screenshots": [
+        {
+          "path": "projects/16-tochno-generator/screenshots/01-cover.jpg",
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/16-tochno-generator/screenshots/02-content.jpg",
+          "caption": "Содержательный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/16-tochno-generator/screenshots/03-detail.jpg",
+          "caption": "Дополнительный блок главной страницы",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/16-tochno-generator/screenshots/04-full-page.jpg",
+          "caption": "Главная страница целиком после прокрутки",
+          "width": 1280,
+          "height": 3325,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/16-tochno-generator/screenshots/05-building-selector.jpg",
+          "caption": "Выбор литера в проекте «Патрики»",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        },
+        {
+          "path": "projects/16-tochno-generator/screenshots/06-property-interface.jpg",
+          "caption": "Фильтры и список помещений проекта «Патрики»",
+          "width": 1280,
+          "height": 720,
+          "format": "jpeg"
+        }
+      ],
+      "description_file": "projects/16-tochno-generator/project.md",
+      "slug": "tochno-generator",
+      "case_route": "/projects/tochno-generator",
+      "display_category": "Каталог недвижимости",
+      "source_url": "https://tochno-generator.ru",
+      "gallery_cover": "projects/16-tochno-generator/screenshots/01-cover.jpg"
+    }
+  ],
+  "gallery_order": [
+    "01-sf-diamonds",
+    "02-navat",
+    "04-bugu",
+    "11-muras-nuru",
+    "07-sora",
+    "14-tochno-merch",
+    "03-nakta",
+    "05-bogatovsoft",
+    "06-ai-consultant",
+    "08-mstarter",
+    "09-elit-stom-med",
+    "10-tochno-careers",
+    "12-ushoo",
+    "13-stay-safe",
+    "15-parkovki-zhk",
+    "16-tochno-generator"
+  ],
+  "initial_project_id": "01-sf-diamonds"
+}
