@@ -55,9 +55,6 @@ const ProjectIndex = forwardRef<IndexHandle, Props>(function ProjectIndex({ acti
 
   return (
     <nav className="index" aria-label="Проекты" data-fade>
-      <h2 className="index__title">
-        Проекты <span aria-hidden="true">/</span> {PROJECT_COUNT}
-      </h2>
       <ol className="index__list" ref={ringRef}>
         {PROJECTS.map((p, i) => (
           <li
@@ -78,7 +75,6 @@ const ProjectIndex = forwardRef<IndexHandle, Props>(function ProjectIndex({ acti
                 onOpen(i);
               }}
             >
-              <span className="index__mark" aria-hidden="true" />
               <span className="index__name">{p.shortTitle}</span>
             </a>
           </li>

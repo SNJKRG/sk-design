@@ -120,7 +120,7 @@ const noHScroll = (page) => page.evaluate(() => document.documentElement.scrollW
   check('логотип ведёт на главную', base.logo === '/');
   const removed = ['Создание и вёрстка сайтов.', 'Работы', 'Подход', 'Все проекты', 'Сайт для вашего бизнеса', 'Лента', 'Сетка', '01 / 16'];
   check('удалённые области не вернулись', removed.every((t) => !base.text.includes(t)), removed.filter((t) => base.text.includes(t)).join(', '));
-  check('заголовок «ПРОЕКТЫ / 16» на месте', /ПРОЕКТЫ\s*\/\s*16/i.test(base.text));
+  check('заголовок «ПРОЕКТЫ / 16» и лаймовые отметки убраны', !/ПРОЕКТЫ\s*\/\s*16/i.test(base.text) && (await page.locator('.index__mark, .index__title').count()) === 0);
   let s = await homeState(page);
   check('первая выбранная работа — SF Diamonds', s.title === 'SF Diamonds' && s.href === '/projects/sf-diamonds');
 

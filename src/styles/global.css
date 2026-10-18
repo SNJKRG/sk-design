@@ -7,7 +7,6 @@
   --text: #2b2d34;
   --muted: #80848f;
   --rule: #b8bbc3;
-  --lime: #8bd102;
   --bg: #ffffff;
   --side: calc(50px * var(--s));
   --font: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
@@ -294,21 +293,6 @@ ol {
   pointer-events: none;
 }
 
-.index__title {
-  font-size: calc(14.5px * var(--s));
-  font-weight: 400;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--muted);
-  line-height: 1.2;
-}
-
-.index > .index__title {
-  position: absolute;
-  left: 0;
-  top: calc(var(--slot-cy, 477px) - var(--row) * 8.2 - 1.6em);
-}
-
 .index__list {
   position: absolute;
   left: 0;
@@ -328,22 +312,13 @@ ol {
 }
 
 .index__list a {
-  display: grid;
-  grid-template-columns: calc(22px * var(--s)) minmax(0, 1fr);
+  display: flex;
   align-items: center;
   height: 100%;
   font-size: calc(15.5px * var(--s));
   line-height: 1.15;
   color: var(--muted);
   transition: color 0.22s;
-}
-
-.index__mark {
-  width: calc(10px * var(--s));
-  height: calc(10px * var(--s));
-  background: var(--lime);
-  transform: scale(0);
-  transition: transform 0.28s var(--ease-out);
 }
 
 .index__name {
@@ -355,10 +330,6 @@ ol {
 .is-active > a {
   color: var(--ink);
   font-weight: 600;
-}
-
-.is-active .index__mark {
-  transform: scale(1);
 }
 
 @media (hover: hover) {
@@ -730,13 +701,10 @@ ol {
     gap: 8px;
     min-height: 44px;
     padding: 0 0 0 12px;
-    font-size: 15px;
-  }
-
-  .panel__projects .index__mark {
-    transform: scale(1);
-    width: 9px;
-    height: 9px;
+    font-size: 16px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 1px;
   }
 
   /* Панель списка работ */
@@ -770,15 +738,10 @@ ol {
 
   .sheet__head {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     min-height: 52px;
     margin-bottom: 8px;
-  }
-
-  .sheet__head .index__title {
-    margin: 0;
-    font-size: 13px;
   }
 
   .sheet__close {
@@ -792,10 +755,9 @@ ol {
   }
 
   .sheet__list a {
-    display: grid;
-    grid-template-columns: 20px minmax(0, 1fr);
-    grid-template-rows: auto auto;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 56px;
     padding: 8px 0;
     border-top: 1px solid #eceef1;
@@ -806,17 +768,12 @@ ol {
     border-bottom: 1px solid #eceef1;
   }
 
-  .sheet__list .index__mark {
-    grid-row: 1 / span 2;
-  }
-
   .sheet__name {
     font-size: 17px;
     line-height: 1.2;
   }
 
   .sheet__cat {
-    grid-column: 2;
     font-size: 13px;
     color: var(--muted);
   }
@@ -828,10 +785,6 @@ ol {
 
   .sheet__list .is-active .sheet__name {
     font-weight: 600;
-  }
-
-  .sheet__list .is-active .index__mark {
-    transform: scale(1);
   }
 
   /* Мобильный кейс: одна колонка, обычная прокрутка документа. */

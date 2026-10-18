@@ -1,6 +1,6 @@
 {
   "base": "http://localhost:4173",
-  "date": "2026-10-18T13:22:20.054Z",
+  "date": "2026-10-18T14:07:12.961Z",
   "passed": 118,
   "failed": 0,
   "results": [
@@ -150,7 +150,7 @@
       "detail": ""
     },
     {
-      "name": "заголовок «ПРОЕКТЫ / 16» на месте",
+      "name": "заголовок «ПРОЕКТЫ / 16» и лаймовые отметки убраны",
       "ok": true,
       "detail": ""
     },
@@ -327,7 +327,7 @@
     {
       "name": "iphone13-390x844: быстрый флик продолжает движение по инерции",
       "ok": true,
-      "detail": "NAVAT Dubai → NAKTA (#7)"
+      "detail": "NAVAT Dubai → ТОЧНО / ORBIT Showroom (#6)"
     },
     {
       "name": "iphone13-390x844: свайп не открывает кейс случайно",
@@ -342,7 +342,7 @@
     {
       "name": "iphone13-390x844: области нажатия ≥ 44 px",
       "ok": true,
-      "detail": "[[\".contact\",141,44],[\".meta__link\",135,44],[\".panel__projects\",126,44]]"
+      "detail": "[[\".contact\",141,44],[\".meta__link\",135,44],[\".panel__projects\",81,44]]"
     },
     {
       "name": "iphone13-390x844: панель «Проекты» открыта, 16 ссылок, фокус внутри",
@@ -412,7 +412,7 @@
     {
       "name": "pixel7-412x915: быстрый флик продолжает движение по инерции",
       "ok": true,
-      "detail": "NAVAT Dubai → ТОЧНО / ORBIT Showroom (#6)"
+      "detail": "NAVAT Dubai → Sora (#5)"
     },
     {
       "name": "pixel7-412x915: свайп не открывает кейс случайно",
@@ -427,7 +427,7 @@
     {
       "name": "pixel7-412x915: области нажатия ≥ 44 px",
       "ok": true,
-      "detail": "[[\".contact\",141,44],[\".meta__link\",135,44],[\".panel__projects\",126,44]]"
+      "detail": "[[\".contact\",141,44],[\".meta__link\",135,44],[\".panel__projects\",81,44]]"
     },
     {
       "name": "pixel7-412x915: панель «Проекты» открыта, 16 ссылок, фокус внутри",

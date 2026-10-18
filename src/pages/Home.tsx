@@ -182,8 +182,7 @@ export default function Home() {
                 aria-label={`Все проекты, выбран ${project.title}`}
                 onClick={() => setSheetOpen(true)}
               >
-                <span className="index__mark" aria-hidden="true" />
-                Проекты <span className="muted">/ {PROJECT_COUNT}</span>
+                Проекты
               </button>
             </ProjectMeta>
           </div>

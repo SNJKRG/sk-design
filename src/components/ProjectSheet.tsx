@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { PROJECTS, PROJECT_COUNT } from '../data/projects';
+import { PROJECTS } from '../data/projects';
 
 type Props = {
   open: boolean;
@@ -45,9 +45,6 @@ export default function ProjectSheet({ open, active, onClose, onOpen }: Props) {
   return createPortal(
     <div ref={ref} className={`sheet${open ? ' is-open' : ''}`} role="dialog" aria-modal="true" aria-label="Все проекты" hidden={!open} data-own-scroll>
       <div className="sheet__head">
-        <h2 className="index__title">
-          Проекты <span aria-hidden="true">/</span> {PROJECT_COUNT}
-        </h2>
         <button type="button" className="sheet__close" onClick={onClose}>
           Закрыть <span aria-hidden="true">✕</span>
         </button>
@@ -64,7 +61,6 @@ export default function ProjectSheet({ open, active, onClose, onOpen }: Props) {
                 onOpen(i);
               }}
             >
-              <span className="index__mark" aria-hidden="true" />
               <span className="sheet__name">{p.title}</span>
               <span className="sheet__cat">{p.category}</span>
             </a>
