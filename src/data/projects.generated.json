@@ -1,0 +1,1909 @@
+{
+  "brand": "SK DESIGN",
+  "contact": {
+    "label": "Обсудить проект ↗",
+    "href": "https://t.me/snj_krg",
+    "handle": "@snj_krg"
+  },
+  "logo": {
+    "width": 1090,
+    "height": 705
+  },
+  "initial": "01-sf-diamonds",
+  "projects": [
+    {
+      "id": "01-sf-diamonds",
+      "index": 0,
+      "slug": "sf-diamonds",
+      "route": "/projects/sf-diamonds",
+      "title": "SF Diamonds",
+      "shortTitle": "SF Diamonds",
+      "category": "Ювелирный каталог",
+      "industry": "Ювелирные украшения",
+      "type": "Каталог",
+      "summary": "Ювелирный каталог с крупной предметной подачей, коллекциями украшений и подбором через мессенджеры.",
+      "description": "Сайт представляет украшения с бриллиантами и часы. Главная ведёт от первого экрана с кольцом к категориям, подборке изделий с ценами и индивидуальному заказу. Для детального знакомства предусмотрены карточки украшений и отдельные информационные страницы.",
+      "url": "https://sf-diamonds.vercel.app",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/sf-diamonds/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/sf-diamonds/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/sf-diamonds/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/sf-diamonds/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/sf-diamonds/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/sf-diamonds/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/sf-diamonds/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/sf-diamonds/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/sf-diamonds/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/sf-diamonds/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/sf-diamonds/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/sf-diamonds/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        }
+      ]
+    },
+    {
+      "id": "02-navat",
+      "index": 1,
+      "slug": "navat-dubai",
+      "route": "/projects/navat-dubai",
+      "title": "NAVAT Dubai",
+      "shortTitle": "NAVAT Dubai",
+      "category": "Ресторан в Дубае",
+      "industry": "Рестораны",
+      "type": "Имиджевый сайт",
+      "summary": "Сайт чайханы в Дубае: история Шёлкового пути, блюда, интерьер и планирование визита.",
+      "description": "Англоязычный сайт NAVAT Dubai знакомит с центральноазиатской кухней и пространством ресторана. Вступительная сцена с караваном переходит к меню с ценами, фотографиям зала, истории бренда и контактам.",
+      "url": "https://navat-seven.vercel.app",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/navat-dubai/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/navat-dubai/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/navat-dubai/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/navat-dubai/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/navat-dubai/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/navat-dubai/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/navat-dubai/05-room-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/navat-dubai/05-room-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Интерьер и рассказ о пространстве NAVAT",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/navat-dubai/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/navat-dubai/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/navat-dubai/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/navat-dubai/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/navat-dubai/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/navat-dubai/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        }
+      ]
+    },
+    {
+      "id": "04-bugu",
+      "index": 2,
+      "slug": "bugu",
+      "route": "/projects/bugu",
+      "title": "BUGU",
+      "shortTitle": "BUGU",
+      "category": "Современная кыргызская кухня",
+      "industry": "Рестораны",
+      "type": "Имиджевый сайт",
+      "summary": "Сайт современной кыргызской кухни с иллюстрированной историей и переходом к меню.",
+      "description": "Главная BUGU выстроена как история в пяти сценах: костёр, музыка, общий стол и работа рук. Иллюстрации и текст раскрывают культурную тему ресторана; далее посетитель переходит к блюдам, залу и бронированию.",
+      "url": "https://bugu-cavf.vercel.app",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/bugu/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/bugu/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/bugu/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/bugu/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/bugu/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/bugu/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/bugu/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/bugu/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/bugu/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/bugu/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/bugu/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/bugu/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Отдельная страница меню BUGU",
+          "tall": false
+        }
+      ]
+    },
+    {
+      "id": "11-muras-nuru",
+      "index": 3,
+      "slug": "muras-nuru",
+      "route": "/projects/muras-nuru",
+      "title": "Muras Nuru BLVD",
+      "shortTitle": "Muras Nuru",
+      "category": "Жилой квартал",
+      "industry": "Недвижимость",
+      "type": "Сайт жилого комплекса",
+      "summary": "Сайт жилого квартала с архитектурной подачей, планировками и обращением в отдел продаж.",
+      "description": "Сайт Muras Nuru BLVD знакомит с жилым кварталом в Бишкеке через архитектуру, благоустройство и культурные детали. Страница ведёт к подбору планировки, расположению, условиям покупки и контактам.",
+      "url": "https://muras-nuru.vercel.app",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/muras-nuru/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/muras-nuru/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/muras-nuru/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/muras-nuru/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/muras-nuru/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/muras-nuru/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/muras-nuru/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/muras-nuru/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/muras-nuru/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/muras-nuru/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/muras-nuru/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/muras-nuru/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 15249,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/muras-nuru/04-full-page-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/muras-nuru/04-full-page-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Главная страница целиком после прокрутки",
+          "tall": true
+        }
+      ]
+    },
+    {
+      "id": "07-sora",
+      "index": 4,
+      "slug": "sora",
+      "route": "/projects/sora",
+      "title": "Sora",
+      "shortTitle": "Sora",
+      "category": "Голосовой AI-менеджер",
+      "industry": "IT и AI",
+      "type": "Продуктовый лендинг",
+      "summary": "Сайт голосового AI-менеджера для агентств недвижимости и девелоперов.",
+      "description": "Лендинг Sora показывает путь входящего звонка: ответ помощника, уточнение запроса, передача менеджеру и карточка обращения. Отдельные блоки посвящены языкам общения, подключению и проверке на звонках конкретного проекта.",
+      "url": "https://sora.bogatovsoft.com",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/sora/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/sora/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/sora/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/sora/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/sora/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/sora/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/sora/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/sora/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/sora/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/sora/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/sora/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/sora/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        }
+      ]
+    },
+    {
+      "id": "14-tochno-merch",
+      "index": 5,
+      "slug": "tochno-orbit",
+      "route": "/projects/tochno-orbit",
+      "title": "ТОЧНО / ORBIT Showroom",
+      "shortTitle": "ТОЧНО / ORBIT",
+      "category": "Демонстрационный showroom",
+      "industry": "Мода и e-commerce",
+      "type": "Интерактивное демо",
+      "summary": "Демонстрационный showroom одежды с каталогом, подбором образа и интерфейсом AI-примерочной.",
+      "description": "Демо ТОЧНО / ORBIT объединяет визуальную примерочную и каталог одежды. В интерфейсе есть выбор погоды и стиля, подсказки на модели, фильтры категорий, избранное и корзина.",
+      "url": "https://merch.snjkrg.tochnodev.ru",
+      "status": "demo",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/tochno-orbit/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/tochno-orbit/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/tochno-orbit/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/tochno-orbit/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/tochno-orbit/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/tochno-orbit/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-orbit/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-orbit/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-orbit/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-orbit/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-orbit/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-orbit/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 3741,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-orbit/04-full-page-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-orbit/04-full-page-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Главная страница целиком после прокрутки",
+          "tall": true
+        }
+      ]
+    },
+    {
+      "id": "03-nakta",
+      "index": 6,
+      "slug": "nakta",
+      "route": "/projects/nakta",
+      "title": "NAKTA",
+      "shortTitle": "NAKTA",
+      "category": "Сайт ресторана",
+      "industry": "Рестораны",
+      "type": "Имиджевый сайт",
+      "summary": "Сайт этно-ресторана с меню кыргызской кухни, банкетными залами и запросом стола.",
+      "description": "Сайт NAKTA соединяет атмосферную подачу ресторана с практическими разделами для гостей. Блюда, фотографии залов и детали сервировки помогают познакомиться с местом, а форма готовит запрос на бронирование в WhatsApp.",
+      "url": "https://nakta.vercel.app",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/nakta/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/nakta/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/nakta/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/nakta/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/nakta/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/nakta/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/nakta/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/nakta/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/nakta/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/nakta/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/nakta/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/nakta/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        }
+      ]
+    },
+    {
+      "id": "05-bogatovsoft",
+      "index": 7,
+      "slug": "bogatovsoft",
+      "route": "/projects/bogatovsoft",
+      "title": "Bogatov Soft",
+      "shortTitle": "Bogatov Soft",
+      "category": "Программные продукты",
+      "industry": "IT и AI",
+      "type": "Корпоративный сайт",
+      "summary": "Сайт программных продуктов для девелоперов с демонстрацией сценариев и обсуждением пилота.",
+      "description": "Корпоративный сайт Bogatov Soft представляет продукты для продаж недвижимости и связанных процессов. Каждый продукт объясняется через рабочую ситуацию, интерфейс и следующий шаг: подробнее, демонстрация или обсуждение пилота.",
+      "url": "https://bogatovsoft.ru",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/bogatovsoft/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/bogatovsoft/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/bogatovsoft/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/bogatovsoft/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/bogatovsoft/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/bogatovsoft/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/bogatovsoft/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/bogatovsoft/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/bogatovsoft/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/bogatovsoft/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/bogatovsoft/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/bogatovsoft/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        }
+      ]
+    },
+    {
+      "id": "06-ai-consultant",
+      "index": 8,
+      "slug": "ai-consultant",
+      "route": "/projects/ai-consultant",
+      "title": "AI Consultant — Bogatov Soft",
+      "shortTitle": "AI Consultant",
+      "category": "AI-консультант",
+      "industry": "IT и AI",
+      "type": "Продуктовый лендинг",
+      "summary": "Лендинг AI-консультанта по недвижимости с демонстрацией подбора квартир и сценария передачи клиента.",
+      "description": "Продуктовая страница объясняет, как AI-консультант отвечает на вопросы покупателей недвижимости, показывает варианты и передаёт обращение менеджеру. На странице есть примеры диалогов, блок демонстрации и описание запуска пилота.",
+      "url": "https://ai-consultant.bogatovsoft.com",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/ai-consultant/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/ai-consultant/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/ai-consultant/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/ai-consultant/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/ai-consultant/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/ai-consultant/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/ai-consultant/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/ai-consultant/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/ai-consultant/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/ai-consultant/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/ai-consultant/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/ai-consultant/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 5752,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/ai-consultant/04-full-page-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/ai-consultant/04-full-page-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Главная страница целиком после прокрутки",
+          "tall": true
+        }
+      ]
+    },
+    {
+      "id": "08-mstarter",
+      "index": 9,
+      "slug": "mstarter",
+      "route": "/projects/mstarter",
+      "title": "M-Starter",
+      "shortTitle": "M-Starter",
+      "category": "Каталог автозапчастей",
+      "industry": "Автозапчасти",
+      "type": "Интернет-магазин",
+      "summary": "Магазин запчастей для стартеров и генераторов с каталогом и презентацией собственного сервиса.",
+      "description": "Сайт M-Starter объединяет каталог автомобильных комплектующих и информацию об автосервисе в Костанае. На главной представлены категории деталей, поиск, вход в аккаунт, корзина и контактные данные магазина и сервиса.",
+      "url": "https://mstarter.kz",
+      "status": "unconfirmed",
+      "designCredit": "copylobby.art",
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/mstarter/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/mstarter/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/mstarter/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/mstarter/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/mstarter/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/mstarter/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/mstarter/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/mstarter/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/mstarter/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/mstarter/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/mstarter/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/mstarter/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 2033,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/mstarter/04-full-page-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/mstarter/04-full-page-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Главная страница целиком после прокрутки",
+          "tall": true
+        }
+      ]
+    },
+    {
+      "id": "09-elit-stom-med",
+      "index": 10,
+      "slug": "re-stom",
+      "route": "/projects/re-stom",
+      "title": "Re Stom",
+      "shortTitle": "Re Stom",
+      "category": "Стоматологическая клиника",
+      "industry": "Медицина",
+      "type": "Сайт клиники",
+      "summary": "Сайт стоматологического центра: направления лечения, врачи, акции и запись на приём.",
+      "description": "Сайт по адресу elit-stom-med.ru сейчас представляет стоматологический центр Re Stom в Санкт-Петербурге. Структура помогает перейти от обзора клиники к услугам, команде, ценам и контактам.",
+      "url": "https://elit-stom-med.ru",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/re-stom/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/re-stom/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/re-stom/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/re-stom/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/re-stom/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/re-stom/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/re-stom/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/re-stom/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/re-stom/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/re-stom/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/re-stom/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/re-stom/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 7771,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/re-stom/04-full-page-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/re-stom/04-full-page-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Главная страница целиком после прокрутки",
+          "tall": true
+        }
+      ]
+    },
+    {
+      "id": "10-tochno-careers",
+      "index": 11,
+      "slug": "tochno-careers",
+      "route": "/projects/tochno-careers",
+      "title": "Карьера в ТОЧНО",
+      "shortTitle": "Карьера в ТОЧНО",
+      "category": "Карьерный сайт",
+      "industry": "HR и карьера",
+      "type": "Карьерный сайт",
+      "summary": "Карьерный сайт девелопера с направлениями вакансий и рассказом о работе в компании.",
+      "description": "Сайт знакомит кандидатов с ГК ТОЧНО и ведёт к вакансиям по направлениям. На главной собраны сведения о компании, география, корпоративная культура и возможности для сотрудников.",
+      "url": "https://tochno-careers.ru",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/tochno-careers/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/tochno-careers/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/tochno-careers/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/tochno-careers/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/tochno-careers/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/tochno-careers/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-careers/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-careers/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-careers/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-careers/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-careers/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-careers/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        }
+      ]
+    },
+    {
+      "id": "12-ushoo",
+      "index": 12,
+      "slug": "ushoo",
+      "route": "/projects/ushoo",
+      "title": "Ushoo",
+      "shortTitle": "Ushoo",
+      "category": "TikTok Shop агентство",
+      "industry": "Маркетинг",
+      "type": "Сайт агентства",
+      "summary": "Англоязычный сайт агентства TikTok Shop с услугами для продавцов и инфлюенсеров.",
+      "description": "Сайт Ushoo представляет услуги по запуску и продвижению магазинов в TikTok Shop. Главная для продавцов раскрывает направления работы, процесс, примеры результатов и условия сотрудничества; отдельная ссылка ведёт к версии для инфлюенсеров.",
+      "url": "https://ushoo.vercel.app",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/ushoo/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/ushoo/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/ushoo/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/ushoo/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/ushoo/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/ushoo/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/ushoo/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/ushoo/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/ushoo/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/ushoo/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/ushoo/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/ushoo/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1551,
+          "height": 6670,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/ushoo/04-full-page-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/ushoo/04-full-page-1551.webp",
+                "w": 1551
+              }
+            ]
+          },
+          "caption": "Главная страница целиком после прокрутки",
+          "tall": true
+        }
+      ]
+    },
+    {
+      "id": "13-stay-safe",
+      "index": 13,
+      "slug": "stay-safe",
+      "route": "/projects/stay-safe",
+      "title": "Stay Safe",
+      "shortTitle": "Stay Safe",
+      "category": "Индивидуальные укрытия",
+      "industry": "Строительство",
+      "type": "Имиджевый лендинг",
+      "summary": "Лендинг индивидуальных укрытий с презентацией подхода, возможностей и этапов строительства.",
+      "description": "Stay Safe представляет строительство частных укрытий под ключ. Главная последовательно раскрывает компанию, назначение пространства, варианты использования, преимущества и процесс работы, затем ведёт к обращению.",
+      "url": "https://stay-safe-eight.vercel.app",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/stay-safe/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/stay-safe/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/stay-safe/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/stay-safe/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/stay-safe/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/stay-safe/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/stay-safe/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/stay-safe/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/stay-safe/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/stay-safe/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/stay-safe/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/stay-safe/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1310,
+          "height": 6662,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/stay-safe/04-full-page-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/stay-safe/04-full-page-1310.webp",
+                "w": 1310
+              }
+            ]
+          },
+          "caption": "Главная страница целиком после прокрутки",
+          "tall": true
+        }
+      ]
+    },
+    {
+      "id": "15-parkovki-zhk",
+      "index": 14,
+      "slug": "parkovki-online",
+      "route": "/projects/parkovki-online",
+      "title": "Парковки Онлайн",
+      "shortTitle": "Парковки Онлайн",
+      "category": "Выбор парковочного места",
+      "industry": "Недвижимость",
+      "type": "Веб-сервис",
+      "summary": "Сервис выбора парковки: каталог жилых комплексов и поэтажный план мест.",
+      "description": "Главная «Парковок Онлайн» предлагает выбрать жилой комплекс. На странице комплекса отображаются этажи, схема парковки и легенда статусов — свободно, бронь, продано и недоступно.",
+      "url": "https://parkovki-zhk.ru",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1270,
+        "height": 714,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/parkovki-online/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/parkovki-online/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/parkovki-online/cover-1270.avif",
+              "w": 1270
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/parkovki-online/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/parkovki-online/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/parkovki-online/cover-1270.webp",
+              "w": 1270
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1270,
+          "height": 714,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/parkovki-online/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/parkovki-online/01-cover-1270.webp",
+                "w": 1270
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1270,
+          "height": 829,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/parkovki-online/04-full-page-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/parkovki-online/04-full-page-1270.webp",
+                "w": 1270
+              }
+            ]
+          },
+          "caption": "Главная страница целиком после прокрутки",
+          "tall": false
+        },
+        {
+          "width": 1270,
+          "height": 714,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/parkovki-online/05-parking-plan-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/parkovki-online/05-parking-plan-1270.webp",
+                "w": 1270
+              }
+            ]
+          },
+          "caption": "Поэтажная схема парковки ЖК Босфор",
+          "tall": false
+        }
+      ]
+    },
+    {
+      "id": "16-tochno-generator",
+      "index": 15,
+      "slug": "tochno-generator",
+      "route": "/projects/tochno-generator",
+      "title": "ТОЧНО Generator",
+      "shortTitle": "ТОЧНО Generator",
+      "category": "Каталог недвижимости",
+      "industry": "Недвижимость",
+      "type": "Веб-приложение",
+      "summary": "Интерфейс каталога недвижимости с выбором проекта, литера и фильтрами помещений.",
+      "description": "ТОЧНО Generator показывает жилые проекты по городам и доступные типы недвижимости. После выбора проекта можно перейти к литерам или списку помещений с фильтрами по этажу, статусу, типу, комнатности, цене и площади.",
+      "url": "https://tochno-generator.ru",
+      "status": "unconfirmed",
+      "designCredit": null,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "sources": {
+          "avif": [
+            {
+              "src": "/media/tochno-generator/cover-480.avif",
+              "w": 480
+            },
+            {
+              "src": "/media/tochno-generator/cover-960.avif",
+              "w": 960
+            },
+            {
+              "src": "/media/tochno-generator/cover-1280.avif",
+              "w": 1280
+            }
+          ],
+          "webp": [
+            {
+              "src": "/media/tochno-generator/cover-480.webp",
+              "w": 480
+            },
+            {
+              "src": "/media/tochno-generator/cover-960.webp",
+              "w": 960
+            },
+            {
+              "src": "/media/tochno-generator/cover-1280.webp",
+              "w": 1280
+            }
+          ]
+        }
+      },
+      "media": [
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-generator/01-cover-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-generator/01-cover-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Обложка проекта: первый экран или вступительная сцена",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-generator/02-content-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-generator/02-content-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Содержательный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-generator/03-detail-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-generator/03-detail-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Дополнительный блок главной страницы",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 3325,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-generator/04-full-page-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-generator/04-full-page-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Главная страница целиком после прокрутки",
+          "tall": true
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-generator/05-building-selector-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-generator/05-building-selector-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Выбор литера в проекте «Патрики»",
+          "tall": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "sources": {
+            "webp": [
+              {
+                "src": "/media/tochno-generator/06-property-interface-960.webp",
+                "w": 960
+              },
+              {
+                "src": "/media/tochno-generator/06-property-interface-1280.webp",
+                "w": 1280
+              }
+            ]
+          },
+          "caption": "Фильтры и список помещений проекта «Патрики»",
+          "tall": false
+        }
+      ]
+    }
+  ]
+}
