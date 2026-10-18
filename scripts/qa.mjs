@@ -10,7 +10,8 @@ const root = path.resolve(import.meta.dirname, '..');
 const SCREENS = path.join(root, 'qa', 'screens');
 await mkdir(SCREENS, { recursive: true });
 const data = JSON.parse(await readFile(path.join(root, 'src', 'data', 'projects.generated.json'), 'utf8'));
-const projects = data.projects;
+// Русские тексты — основной язык; переводы проверяются отдельно.
+const projects = data.projects.map((p) => ({ ...p, ...p.i18n.ru }));
 
 const results = [];
 const check = (name, ok, detail = '') => {
@@ -54,19 +55,19 @@ const noHScroll = (page) => page.evaluate(() => document.documentElement.scrollW
     await page.goto(BASE + p.route, { waitUntil: 'networkidle' });
     const info = await page.evaluate(() => {
       const live = [...document.querySelectorAll('a')].find((a) => a.textContent.includes('Открыть сайт'));
-      const imgs = [...document.querySelectorAll('.case-media img')];
+      const imgs = [...document.querySelectorAll('.case-strip figure:not([aria-hidden]) img')];
       return {
-        h1: document.querySelector('h1')?.childNodes[0]?.textContent?.trim(),
+        h1: document.querySelector('h1')?.textContent?.trim(),
         title: document.title,
         live: live && { href: live.getAttribute('href'), target: live.target, rel: live.rel },
         imgs: imgs.length,
         firstLoaded: imgs.slice(0, 2).every((i) => i.complete && i.naturalWidth > 0),
         text: document.querySelector('.case-info__text')?.textContent?.length ?? 0,
-        demo: Boolean(document.querySelector('.tag')),
+        demo: /(^|[^а-яё])демо([^а-яё]|$)|\bdemo\b/i.test(document.querySelector('main').innerText),
         credit: document.querySelector('.case-info__note')?.textContent ?? '',
         emptyHref: [...document.querySelectorAll('a')].some((a) => !a.getAttribute('href') || a.getAttribute('href') === '#'),
         hscroll: document.documentElement.scrollWidth > window.innerWidth + 1,
-        localImgs: imgs.every((i) => new URL(i.currentSrc || i.src).origin === location.origin),
+        localImgs: imgs.every((i) => new URL(i.currentSrc || i.getAttribute('src') || i.dataset.src, location.href).origin === location.origin),
       };
     });
     const ok =
@@ -82,9 +83,8 @@ const noHScroll = (page) => page.evaluate(() => document.documentElement.scrollW
       !info.hscroll &&
       info.localImgs;
     check(`кейс ${p.route}`, ok, `h1="${info.h1}", сайт=${info.live?.href}, снимков ${info.imgs}/${p.media.length}`);
-    if (p.status === 'demo') check(`ORBIT помечен «Демо»`, info.demo);
     if (p.designCredit) check(`M-Starter: кредит дизайна copylobby.art`, info.credit.includes('copylobby.art'));
-    if (p.status !== 'demo' && info.demo) check(`лишняя отметка «Демо» на ${p.slug}`, false);
+    if (info.demo) check(`пометка «Демо» на ${p.slug}`, false);
   }
   // refresh одного маршрута
   await page.goto(BASE + projects[5].route, { waitUntil: 'networkidle' });
@@ -96,6 +96,7 @@ const noHScroll = (page) => page.evaluate(() => document.documentElement.scrollW
     check(`404 для ${bad}`, (await page.locator('h1').first().textContent()).includes('Такой страницы нет'));
   }
   // Подсчёт уникальности
+  check('пометки «Демо» нет ни в одном кейсе', !results.some((r) => r.name.startsWith('пометка «Демо»')));
   check('16 уникальных маршрутов и адресов', new Set(projects.map((p) => p.route)).size === 16 && new Set(projects.map((p) => p.url)).size === 16);
   check('кейсы: нет ошибок и 404 ассетов', problems.length === 0, problems.slice(0, 5).join(' | '));
   await ctx.close();
@@ -120,7 +121,7 @@ const noHScroll = (page) => page.evaluate(() => document.documentElement.scrollW
   check('логотип ведёт на главную', base.logo === '/');
   const removed = ['Создание и вёрстка сайтов.', 'Работы', 'Подход', 'Все проекты', 'Сайт для вашего бизнеса', 'Лента', 'Сетка', '01 / 16'];
   check('удалённые области не вернулись', removed.every((t) => !base.text.includes(t)), removed.filter((t) => base.text.includes(t)).join(', '));
-  check('заголовок «ПРОЕКТЫ / 16» на месте', /ПРОЕКТЫ\s*\/\s*16/i.test(base.text));
+  check('заголовок «ПРОЕКТЫ / 16» и лаймовые отметки убраны', !/ПРОЕКТЫ\s*\/\s*16/i.test(base.text) && (await page.locator('.index__mark, .index__title').count()) === 0);
   let s = await homeState(page);
   check('первая выбранная работа — SF Diamonds', s.title === 'SF Diamonds' && s.href === '/projects/sf-diamonds');
 
@@ -432,9 +433,11 @@ for (const [name, device] of [
     hscroll: document.documentElement.scrollWidth > innerWidth + 1,
     back: document.querySelector('.case__back').getBoundingClientRect().height,
     live: document.querySelector('.case-info__live').getBoundingClientRect().height,
-    imgW: Math.max(...[...document.querySelectorAll('.case-media img')].map((i) => i.getBoundingClientRect().width)),
+    imgW: Math.max(...[...document.querySelectorAll('.case-strip img')].map((i) => i.getBoundingClientRect().width)),
+    headerFixed: getComputedStyle(document.querySelector('.site-header')).position === 'fixed',
   }));
   check(`${name}: мобильный кейс в одну колонку без переполнения`, !mcase.hscroll && mcase.imgW <= page.viewportSize().width, JSON.stringify(mcase));
+  check(`${name}: шапка закреплена в кейсе`, mcase.headerFixed);
   check(`${name}: «Назад» и «Открыть сайт» ≥ 44 px`, mcase.back >= 44 && mcase.live >= 44);
   // свайп по кейсу — обычная прокрутка документа
   await touchSwipe(page, cdp, vp.width / 2, 700, 250, 200);
@@ -516,17 +519,183 @@ for (const [kind, w, h] of matrix) {
   await settle(page, 1400);
   await page.screenshot({ path: path.join(SCREENS, `${kind}-${w}x${h}-case-muras-nuru.jpg`), quality: 84 });
   const caseLayout = await page.evaluate(() => {
-    const info = document.querySelector('.case-info__inner').getBoundingClientRect();
-    const first = document.querySelector('.case-media__item').getBoundingClientRect();
-    const head = document.querySelector('.site-header').getBoundingClientRect();
+    const info = document.querySelector('.case-info').getBoundingClientRect();
+    const strip = document.querySelector('.case-strip').getBoundingClientRect();
+    const head = document.querySelector('.site-header');
+    const logo = document.querySelector('.logo').getBoundingClientRect();
+    const back = document.querySelector('.case__back').getBoundingClientRect();
+    const desktop = document.querySelector('.case--desktop') !== null;
     return {
       hscroll: document.documentElement.scrollWidth > innerWidth + 1,
-      overlap: info.right > first.left && info.bottom > first.top && info.left < first.right && info.top < first.bottom,
-      headerOverMedia: head.bottom > first.top + 2 && getComputedStyle(document.querySelector('.site-header')).position === 'fixed',
+      // desktop: инфо слева не заходит на ленту справа; mobile: лента ниже текста.
+      overlap: desktop ? info.right > strip.left : info.bottom > strip.top + 1,
+      headerFixed: getComputedStyle(head).position === 'fixed',
+      headerOverText: logo.bottom > Math.min(info.top, back.top) + 1,
     };
   });
-  check(`${kind} ${w}×${h}: кейс без переполнения и перекрытий`, !caseLayout.hscroll && !caseLayout.overlap && !caseLayout.headerOverMedia, JSON.stringify(caseLayout));
+  check(`${kind} ${w}×${h}: кейс без переполнения и перекрытий, шапка закреплена`, !caseLayout.hscroll && !caseLayout.overlap && caseLayout.headerFixed && !caseLayout.headerOverText, JSON.stringify(caseLayout));
   if (problems.length) check(`${kind} ${w}×${h}: ошибки`, false, problems.slice(0, 3).join(' | '));
+  await ctx.close();
+}
+
+
+// ───────── 7b. Кейс desktop: бесконечная лента как у Obys ─────────
+{
+  const { ctx, page, problems } = await open({ viewport: { width: 1536, height: 1024 } });
+  await page.goto(BASE + '/projects/tochno-generator', { waitUntil: 'networkidle' });
+  await settle(page, 1500);
+  const layout = await page.evaluate(() => {
+    const strip = document.querySelector('.case-strip').getBoundingClientRect();
+    const title = document.querySelector('.case-info__title').getBoundingClientRect();
+    return {
+      docScroll: document.documentElement.scrollHeight <= innerHeight + 1,
+      stripLeft: Math.round(strip.left),
+      stripRight: Math.round(strip.right),
+      titleY: Math.round(title.top + title.height / 2),
+      blend: getComputedStyle(document.querySelector('.site-header')).mixBlendMode,
+    };
+  });
+  check('кейс desktop: страница неподвижна, лента — правая половина', layout.docScroll && Math.abs(layout.stripLeft - 768) <= 1 && layout.stripRight === 1536, JSON.stringify(layout));
+  check('кейс desktop: название на центральной линии', Math.abs(layout.titleY - 512) < 40, `${layout.titleY}px`);
+  check('кейс desktop: шапка закреплена и инвертируется над снимками', layout.blend === 'difference');
+  const coverage = () =>
+    page.evaluate(() => {
+
+      const boxes = [...document.querySelectorAll('.slide-box')].filter((b) => b.style.visibility !== 'hidden').map((b) => b.getBoundingClientRect());
+      // доля высоты ленты, закрытая досками
+      let covered = 0;
+      for (let y = 0; y < innerHeight; y += 4) if (boxes.some((b) => b.top <= y && b.bottom >= y)) covered++;
+      return covered / Math.ceil(innerHeight / 4);
+    });
+  const first = await page.evaluate(() => document.querySelector('[data-slide="0"] picture').getBoundingClientRect().top);
+  await page.mouse.move(1150, 500);
+  for (let i = 0; i < 40; i++) {
+    await page.mouse.wheel(0, 400);
+    await page.waitForTimeout(20);
+  }
+  await settle(page, 1800);
+  const moved = await page.evaluate(() => document.querySelector('[data-slide="0"] picture').getBoundingClientRect().top);
+  const cov = await coverage();
+  check('кейс desktop: колесо прокручивает ленту, цикл без пустот', moved !== first && cov === 1, `покрытие ${Math.round(cov * 100)}%`);
+  await page.screenshot({ path: path.join(SCREENS, 'desktop-1536x1024-case-tochno-generator-scrolled.jpg'), quality: 84 });
+  check('кейс desktop: нет ошибок', problems.length === 0, problems.slice(0, 3).join(' | '));
+  await ctx.close();
+}
+
+// ───────── 7c. Языки: RU / EN / TR, переключатель, SEO-страницы ─────────
+{
+  const { ctx, page, problems } = await open({ viewport: { width: 1536, height: 1024 } });
+  const expect = {
+    en: { home: 'Website Design & Development Studio | SK DESIGN', contact: 'Discuss a project', view: 'View case', visit: 'Visit website', back: 'Back to projects' },
+    tr: { home: 'Web Sitesi Tasarım ve Geliştirme Stüdyosu | SK DESIGN', contact: 'Projeyi konuşalım', view: 'Projeyi incele', visit: 'Siteyi aç', back: 'Projelere dön' },
+  };
+  for (const lang of ['en', 'tr']) {
+    await page.goto(`${BASE}/${lang}`, { waitUntil: 'networkidle' });
+    await settle(page, 1200);
+    const h = await page.evaluate(() => ({
+      title: document.title,
+      lang: document.documentElement.lang,
+      contact: document.querySelector('.contact').textContent,
+      view: document.querySelector('.meta__link').textContent,
+      href: document.querySelector('.meta__link').getAttribute('href'),
+      links: [...document.querySelectorAll('.index__list a')].map((a) => a.getAttribute('href')),
+      names: [...document.querySelectorAll('.index__name')].map((n) => n.textContent),
+      cyr: /[а-яё]/i.test(document.querySelector('.site-header').innerText + document.querySelector('.meta').innerText + document.querySelector('.index').innerText),
+    }));
+    check(
+      `${lang}: главная переведена, ссылки с префиксом /${lang}`,
+      h.title === expect[lang].home && h.lang === lang && h.contact.includes(expect[lang].contact) && h.view.includes(expect[lang].view) && h.href.startsWith(`/${lang}/projects/`) && h.links.every((l) => l.startsWith(`/${lang}/projects/`)) && !h.cyr,
+      `${h.title}; ${h.names.slice(0, 3).join(', ')}`,
+    );
+    for (const p of [projects[5], projects[11]]) {
+      await page.goto(`${BASE}/${lang}${p.route}`, { waitUntil: 'networkidle' });
+      await settle(page, 600);
+      const c = await page.evaluate(() => ({
+        title: document.title,
+        h1: document.querySelector('h1').textContent,
+        info: document.querySelector('.case-info').innerText,
+        back: document.querySelector('.case__back').textContent,
+        alt: document.querySelector('.case-strip figure:not([aria-hidden]) img').alt,
+      }));
+      const tx = p.i18n[lang];
+      check(
+        `${lang}: кейс ${p.slug} переведён`,
+        c.title === tx.seoTitle && c.h1 === tx.title && c.info.includes(tx.description) && c.info.includes(expect[lang].visit) && c.back.includes(expect[lang].back) && !/[а-яё]/i.test(c.info + c.back + c.alt),
+        c.title,
+      );
+    }
+  }
+  // Переключатель языка: открыть, клавиатура, выбор сохраняет страницу.
+  await page.goto(`${BASE}/projects/bugu`, { waitUntil: 'networkidle' });
+  await settle(page, 800);
+  await page.click('.lang');
+  await page.waitForTimeout(300);
+  const menu = await page.evaluate(() => ({
+    items: [...document.querySelectorAll('.lang-menu a')].map((a) => [a.textContent, a.getAttribute('href')]),
+    focus: document.activeElement?.closest('.lang-menu') !== null,
+    blend: getComputedStyle(document.querySelector('.lang-menu')).mixBlendMode,
+  }));
+  await page.screenshot({ path: path.join(SCREENS, 'desktop-1536x1024-language-menu.jpg'), quality: 84 });
+  check(
+    'переключатель языка: 3 пункта, ссылки на ту же страницу, фокус в меню',
+    menu.items.length === 3 && menu.items.map((i) => i[1]).join() === '/projects/bugu,/en/projects/bugu,/tr/projects/bugu' && menu.focus && menu.blend === 'normal',
+    JSON.stringify(menu.items),
+  );
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(200);
+  check('переключатель: Escape закрывает и возвращает фокус', (await page.locator('.lang-menu').count()) === 0 && (await page.evaluate(() => document.activeElement?.classList.contains('lang'))));
+  await page.click('.lang');
+  await page.waitForTimeout(200);
+  await page.keyboard.press('ArrowDown');
+  await page.keyboard.press('ArrowDown');
+  await page.keyboard.press('Enter');
+  await page.waitForURL('**/tr/projects/bugu');
+  await settle(page, 800);
+  check('переключатель: выбор Türkçe с клавиатуры открывает ту же работу на турецком', (await page.locator('h1').textContent()) === projects.find((p) => p.slug === 'bugu').i18n.tr.title && page.url().endsWith('/tr/projects/bugu'));
+  await page.click('.lang');
+  await page.waitForTimeout(200);
+  await page.mouse.click(300, 300);
+  await page.waitForTimeout(200);
+  check('переключатель: клик вне меню закрывает его', (await page.locator('.lang-menu').count()) === 0);
+  // Логотип и «назад» остаются в выбранном языке
+  await page.click('.case__back');
+  await settle(page, 1500);
+  check('возврат из кейса сохраняет язык', page.url() === `${BASE}/tr`);
+  // Статические SEO-страницы
+  const raw = async (u) => (await (await ctx.request.get(BASE + u)).text());
+  const html = { ru: await raw('/projects/re-stom'), en: await raw('/en/projects/re-stom'), tr: await raw('/tr'), ruHome: await raw('/') };
+  const titleOf = (h) => /<title>([^<]*)<\/title>/.exec(h)?.[1];
+  const reStom = projects.find((p) => p.slug === 're-stom');
+  check(
+    'SEO: у каждой страницы свой title, description и lang в исходном HTML',
+    titleOf(html.ru) === reStom.i18n.ru.seoTitle && titleOf(html.en) === reStom.i18n.en.seoTitle && /<html lang="tr">/.test(html.tr) && html.en.includes(`content="${reStom.i18n.en.summary}"`) && /og:title/.test(html.ruHome),
+    `${titleOf(html.ru)} / ${titleOf(html.en)} / ${titleOf(html.tr)}`,
+  );
+  const allTitles = [];
+  for (const lang of ['ru', 'en', 'tr']) for (const p of projects) allTitles.push(p.i18n[lang].seoTitle);
+  check('SEO: 48 уникальных title кейсов, длина ≤ 70 символов', new Set(allTitles).size === 48 && allTitles.every((t) => t.length <= 70), `максимум ${Math.max(...allTitles.map((t) => t.length))}`);
+  check('языки: нет ошибок', problems.length === 0, problems.slice(0, 3).join(' | '));
+  await ctx.close();
+}
+
+// ───────── 7d. Мобильный переключатель языка ─────────
+{
+  const { ctx, page } = await open({ ...devices['iPhone 13'] });
+  await page.goto(BASE + '/', { waitUntil: 'networkidle' });
+  await settle(page, 1200);
+  const r = await page.evaluate(() => {
+    const b = document.querySelector('.lang').getBoundingClientRect();
+    const c = document.querySelector('.contact').getBoundingClientRect();
+    return { w: b.width, h: b.height, overlap: b.right > c.left, inView: c.right <= innerWidth };
+  });
+  check('mobile: кнопка языка ≥ 44 px и не наезжает на контакт', r.w >= 44 && r.h >= 44 && !r.overlap && r.inView, JSON.stringify(r));
+  await page.tap('.lang');
+  await page.waitForTimeout(300);
+  await page.screenshot({ path: path.join(SCREENS, 'mobile-iphone13-390x844-language-menu.jpg'), quality: 84 });
+  await page.tap('.lang-menu a[hreflang="en"]');
+  await page.waitForURL('**/en');
+  await settle(page, 1200);
+  check('mobile: выбор English переключает главную', (await page.locator('.panel__projects').textContent()).includes('Projects'));
   await ctx.close();
 }
 

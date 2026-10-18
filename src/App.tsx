@@ -9,8 +9,10 @@ export default function App() {
     <>
       <SiteHeader />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects/:slug" element={<ProjectPage />} />
+        {['', '/en', '/tr'].map((prefix) => [
+          <Route key={`${prefix}-home`} path={prefix || '/'} element={<Home />} />,
+          <Route key={`${prefix}-case`} path={`${prefix}/projects/:slug`} element={<ProjectPage />} />,
+        ])}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

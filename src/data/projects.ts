@@ -7,11 +7,7 @@ export type ImageSet = {
   sources: { avif?: ImageSource[]; webp: ImageSource[] };
 };
 export type CaseMedia = ImageSet & { caption: string; tall: boolean };
-export type Project = {
-  id: string;
-  index: number;
-  slug: string;
-  route: string;
+export type ProjectI18n = {
   title: string;
   shortTitle: string;
   category: string;
@@ -19,9 +15,16 @@ export type Project = {
   type: string;
   summary: string;
   description: string;
+  seoTitle: string;
+};
+export type Project = {
+  id: string;
+  index: number;
+  slug: string;
+  route: string;
   url: string;
-  status: string;
   designCredit: string | null;
+  i18n: Record<'ru' | 'en' | 'tr', ProjectI18n>;
   cover: ImageSet;
   media: CaseMedia[];
 };

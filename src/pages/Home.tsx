@@ -10,13 +10,16 @@ import { galleryStore } from '../lib/galleryStore';
 import { mod } from '../lib/math';
 import { transition } from '../lib/transition';
 import { useDocumentMeta } from '../lib/useDocumentMeta';
+import { dict, localize, slugFromPath, textOf, useLang } from '../i18n';
 import { prefersReducedMotion, useLayout } from '../lib/useMedia';
-
-const slugFromPath = (path: string) => /^\/projects\/([^/]+)\/?$/.exec(path)?.[1];
 
 export default function Home() {
   const layout = useLayout();
   const navigate = useNavigate();
+  const lang = useLang();
+  const t = dict(lang);
+  const langRef = useRef(lang);
+  langRef.current = lang;
   const rootRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const galleryRef = useRef<GalleryHandle>(null);
@@ -28,7 +31,7 @@ export default function Home() {
   const [insets, setInsets] = useState<Insets>({ top: 0, bottom: 0, right: 0 });
   const leaving = useRef(false);
 
-  useDocumentMeta('SK DESIGN — создание и вёрстка сайтов', 'SK DESIGN — создание и вёрстка сайтов. 16 работ: каталоги, рестораны, недвижимость, IT-продукты и веб-сервисы.', '/');
+  useDocumentMeta(t.homeTitle, t.homeDescription, '/', lang);
 
   useLayoutEffect(() => {
     document.documentElement.classList.add('is-home');
@@ -110,7 +113,7 @@ export default function Home() {
       galleryStore.save(g.position());
       galleryStore.select(project.slug);
       const v = g.visual(index);
-      const go = () => navigate(project.route, { state: { fromHome: true } });
+      const go = () => navigate(localize(project.route, langRef.current), { state: { fromHome: true } });
       if (!v || prefersReducedMotion() || !transition.capture(project.slug, v, 'case')) {
         go();
         return;
@@ -179,11 +182,10 @@ export default function Home() {
                 className="panel__projects"
                 aria-haspopup="dialog"
                 aria-expanded={sheetOpen}
-                aria-label={`Все проекты, выбран ${project.title}`}
+                aria-label={`${t.allProjects}, ${t.selected}: ${textOf(project, lang).title}`}
                 onClick={() => setSheetOpen(true)}
               >
-                <span className="index__mark" aria-hidden="true" />
-                Проекты <span className="muted">/ {PROJECT_COUNT}</span>
+                {t.projects}
               </button>
             </ProjectMeta>
           </div>
