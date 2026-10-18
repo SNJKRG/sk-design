@@ -562,10 +562,14 @@ for (const [kind, w, h] of matrix) {
     page.evaluate(() => {
 
       const boxes = [...document.querySelectorAll('.slide-box')].filter((b) => b.style.visibility !== 'hidden').map((b) => b.getBoundingClientRect());
-      // доля высоты ленты, закрытая досками
-      let covered = 0;
-      for (let y = 0; y < innerHeight; y += 4) if (boxes.some((b) => b.top <= y && b.bottom >= y)) covered++;
-      return covered / Math.ceil(innerHeight / 4);
+      // самый длинный промежуток без снимка по высоте экрана (зазоры между снимками допустимы)
+      let run = 0;
+      let maxRun = 0;
+      for (let y = 0; y < innerHeight; y += 4) {
+        run = boxes.some((b) => b.top <= y && b.bottom >= y) ? 0 : run + 4;
+        maxRun = Math.max(maxRun, run);
+      }
+      return maxRun;
     });
   const first = await page.evaluate(() => document.querySelector('[data-slide="0"] picture').getBoundingClientRect().top);
   await page.mouse.move(1150, 500);
@@ -576,7 +580,17 @@ for (const [kind, w, h] of matrix) {
   await settle(page, 1800);
   const moved = await page.evaluate(() => document.querySelector('[data-slide="0"] picture').getBoundingClientRect().top);
   const cov = await coverage();
-  check('кейс desktop: колесо прокручивает ленту, цикл без пустот', moved !== first && cov === 1, `покрытие ${Math.round(cov * 100)}%`);
+  check('кейс desktop: колесо прокручивает ленту, цикл без пустот', moved !== first && cov < 120, `наибольший просвет ${cov}px`);
+  const scales = await page.evaluate(() =>
+    [...document.querySelectorAll('.slide-box')]
+      .filter((b) => b.style.visibility !== 'hidden')
+      .map((b) => {
+        const r = b.getBoundingClientRect();
+        return { d: Math.abs(r.top + r.height / 2 - innerHeight / 2), s: +/scale\(([\d.]+)\)/.exec(b.style.transform)[1] };
+      })
+      .sort((a, b) => a.d - b.d),
+  );
+  check('кейс desktop: снимок на центральной линии крупнее соседей', scales[0].s > 0.97 && scales.slice(1).some((x) => x.s < 0.9), scales.map((x) => x.s.toFixed(2)).join(', '));
   await page.screenshot({ path: path.join(SCREENS, 'desktop-1536x1024-case-tochno-generator-scrolled.jpg'), quality: 84 });
   check('кейс desktop: нет ошибок', problems.length === 0, problems.slice(0, 3).join(' | '));
   await ctx.close();
@@ -665,6 +679,7 @@ for (const [kind, w, h] of matrix) {
   const raw = async (u) => (await (await ctx.request.get(BASE + u)).text());
   const html = { ru: await raw('/projects/re-stom'), en: await raw('/en/projects/re-stom'), tr: await raw('/tr'), ruHome: await raw('/') };
   const titleOf = (h) => /<title>([^<]*)<\/title>/.exec(h)?.[1];
+  const allTitlesHaveDash = (list) => list.some((p) => ['ru', 'en', 'tr'].some((l) => /—/.test(p.i18n[l].seoTitle + p.i18n[l].summary)));
   const reStom = projects.find((p) => p.slug === 're-stom');
   check(
     'SEO: у каждой страницы свой title, description и lang в исходном HTML',
@@ -673,6 +688,9 @@ for (const [kind, w, h] of matrix) {
   );
   const allTitles = [];
   for (const lang of ['ru', 'en', 'tr']) for (const p of projects) allTitles.push(p.i18n[lang].seoTitle);
+  const pagesHtml = [html.ru, html.en, html.tr, html.ruHome].join('\n');
+  const heads = [...pagesHtml.matchAll(/<title>[^<]*<\/title>|<meta name="description" content="[^"]*"/g)].map((m) => m[0]);
+  check('SEO: в title и description нет длинного тире', !heads.some((t) => t.includes('—')) && !allTitlesHaveDash(projects), heads.filter((t) => t.includes('—')).join(' | '));
   check('SEO: 48 уникальных title кейсов, длина ≤ 70 символов', new Set(allTitles).size === 48 && allTitles.every((t) => t.length <= 70), `максимум ${Math.max(...allTitles.map((t) => t.length))}`);
   check('языки: нет ошибок', problems.length === 0, problems.slice(0, 3).join(' | '));
   await ctx.close();
