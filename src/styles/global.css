@@ -147,14 +147,101 @@ ol {
   align-items: flex-start;
   padding: calc(15px * var(--s)) var(--side) 0;
   pointer-events: none;
+  /* Как у Obys: закреплённая шапка инвертируется поверх снимков. */
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 .site-header > * {
   pointer-events: auto;
 }
 
-.site-header.is-inner {
-  position: absolute;
+.site-header__end {
+  display: flex;
+  align-items: baseline;
+  gap: calc(34px * var(--s));
+  margin-top: calc(22px * var(--s));
+}
+
+/* Переключатель языка */
+.lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding-bottom: calc(7px * var(--s));
+  border-bottom: 1px solid transparent;
+  font-size: calc(16.5px * var(--s));
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.lang__chevron {
+  transition: transform 0.3s var(--ease-out);
+}
+
+.lang[aria-expanded='true'] .lang__chevron {
+  transform: rotate(180deg);
+}
+
+@media (hover: hover) {
+  .lang:hover {
+    border-bottom-color: currentColor;
+  }
+}
+
+.lang-menu {
+  position: fixed;
+  z-index: 90;
+  min-width: 176px;
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  background: var(--bg);
+  border: 1px solid #e4e6ea;
+  box-shadow: 0 14px 36px rgba(13, 14, 17, 0.08);
+  animation: lang-in 0.28s var(--ease-out) both;
+}
+
+@keyframes lang-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.lang-menu a {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  min-height: 44px;
+  align-items: center;
+  padding: 0 18px;
+  font-size: 15px;
+  color: var(--muted);
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.lang-menu a:hover,
+.lang-menu a:focus-visible {
+  color: var(--ink);
+  background: #f5f6f7;
+  outline: none;
+}
+
+.lang-menu a[aria-current='true'] {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.lang-menu__code {
+  width: 22px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
 }
 
 .logo {
@@ -166,6 +253,7 @@ ol {
 .logo img {
   width: 100%;
   height: auto;
+  filter: invert(1);
 }
 
 .site-header.is-inner .logo {
@@ -173,7 +261,6 @@ ol {
 }
 
 .contact {
-  margin-top: calc(22px * var(--s));
   font-size: calc(16.5px * var(--s));
 }
 
@@ -430,86 +517,79 @@ ol {
 
 /* ───────────── Кейс ───────────── */
 
-.case {
+html.is-case,
+html.is-case body {
+  overflow: hidden;
+  overscroll-behavior: none;
+  height: 100%;
+}
+
+.case--desktop {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+/* Слева на центральной линии: название | категории, описание, ссылка. */
+.case--desktop .case-info {
+  position: absolute;
+  z-index: 2;
+  left: var(--side);
+  top: calc(50% - 0.6em);
+  width: calc(50% - var(--side) - 96px * var(--s));
   display: grid;
-  grid-template-columns: minmax(0, 37fr) minmax(0, 63fr);
-  column-gap: calc(40px * var(--s));
-  padding: 0 var(--side);
-  min-height: 100vh;
-  /* Въезжающие справа кадры не создают горизонтальную прокрутку. */
-  overflow-x: clip;
-}
-
-.case-info {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  height: 100dvh;
-  display: flex;
-  align-items: center;
-  padding: calc(120px * var(--s)) 0 calc(110px * var(--s));
-}
-
-.case-info__inner {
-  max-width: calc(440px * var(--s));
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  column-gap: calc(28px * var(--s));
+  align-items: start;
 }
 
 .case-info__title {
-  font-size: calc(44px * var(--s));
+  font-size: calc(26px * var(--s));
   font-weight: 400;
-  line-height: 1.04;
-  letter-spacing: -0.025em;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--ink-title);
   text-wrap: balance;
-}
-
-.tag {
-  display: inline-block;
-  margin-left: 0.4em;
-  padding: 0.35em 0.6em 0.3em;
-  border: 1px solid currentColor;
-  font-size: calc(12px * var(--s));
-  line-height: 1;
-  letter-spacing: 0.08em;
-  vertical-align: 0.9em;
-  color: var(--ink);
+  overflow-wrap: break-word;
 }
 
 .case-info__category {
-  font-size: calc(16.5px * var(--s));
+  font-size: calc(16px * var(--s));
+  line-height: 1.3;
   color: var(--ink);
 }
 
 .case-info__kind {
-  margin-top: 4px;
+  margin-top: 3px;
   font-size: calc(14.5px * var(--s));
   color: var(--muted);
 }
 
 .case-info__text {
-  margin-top: calc(28px * var(--s));
-  font-size: calc(15.5px * var(--s));
+  margin-top: calc(20px * var(--s));
+  font-size: calc(15px * var(--s));
   line-height: 1.55;
   color: var(--text);
-  max-width: 34em;
+  max-width: 32em;
 }
 
 .case-info__note {
-  margin-top: calc(14px * var(--s));
+  margin-top: calc(12px * var(--s));
   font-size: calc(14px * var(--s));
   color: var(--muted);
 }
 
 .case-info__live {
-  margin-top: calc(32px * var(--s));
+  margin-top: calc(26px * var(--s));
 }
 
 .case__back {
   position: fixed;
   z-index: 5;
   left: var(--side);
-  bottom: calc(36px * var(--s));
+  bottom: calc(30px * var(--s));
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
@@ -523,30 +603,69 @@ ol {
   color: var(--ink);
 }
 
-.case-media {
+/* Бесконечная лента досок справа. */
+.case-strip.is-loop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  overflow: hidden;
+  touch-action: pinch-zoom;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.slide-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  will-change: transform;
+}
+
+.slide {
   display: flex;
-  flex-direction: column;
-  gap: calc(28px * var(--s));
-  padding: calc(118px * var(--s)) 0 calc(120px * var(--s));
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  background: #0e0e0f;
 }
 
-.case-media__item {
-  width: 100%;
-  background: #f3f3f4;
+.slide--light {
+  background: #ececed;
 }
 
-.case-media__item.is-tall {
-  width: 62%;
-}
-
-.case-media__link {
+.slide picture {
   display: block;
-  cursor: zoom-in;
+  width: 85%;
 }
 
-.case-media__item img {
+.slide.is-tall picture {
+  width: 56%;
+}
+
+.slide img {
   width: 100%;
   height: auto;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+/* Тонкие уголки на стыке половин — маркер, как скобки у Obys. */
+.case-marker {
+  position: fixed;
+  z-index: 6;
+  left: calc(50% - 62px * var(--s));
+  top: calc(50% - 62px * var(--s));
+  width: calc(124px * var(--s));
+  height: calc(124px * var(--s));
+  mix-blend-mode: difference;
+  --corner: calc(28px * var(--s));
+}
+
+.case-marker i {
+  border-color: #fff;
 }
 
 /* ───────────── 404 ───────────── */
@@ -593,10 +712,27 @@ ol {
     padding: calc(12px + var(--safe-top)) calc(20px + var(--safe-right)) 10px calc(20px + var(--safe-left));
     align-items: center;
     background: var(--bg);
+    color: var(--ink);
+    mix-blend-mode: normal;
   }
 
-  .site-header.is-inner {
-    background: none;
+  .logo img {
+    filter: none;
+  }
+
+  .site-header__end {
+    margin-top: 0;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .lang {
+    min-height: 44px;
+    min-width: 44px;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
   }
 
   .logo,
@@ -788,22 +924,23 @@ ol {
   }
 
   /* Мобильный кейс: одна колонка, обычная прокрутка документа. */
-  .case {
-    display: block;
-    padding: calc(76px + var(--safe-top)) calc(16px + var(--safe-right)) calc(40px + var(--safe-bottom)) calc(16px + var(--safe-left));
+  .case--mobile {
+    display: flex;
+    flex-direction: column;
+    padding: calc(74px + var(--safe-top)) 0 calc(40px + var(--safe-bottom));
   }
 
-  .case__back {
+  .case--mobile .case__back {
     position: static;
-    margin: 0 0 18px;
+    order: -1;
+    margin: 0 calc(20px + var(--safe-right)) 6px calc(20px + var(--safe-left));
     font-size: 15px;
   }
 
-  .case-info {
-    position: static;
-    height: auto;
-    display: block;
-    padding: 0 4px 26px;
+  .case--mobile .case-info {
+    display: grid;
+    gap: 14px;
+    padding: 18px calc(20px + var(--safe-right)) 34px calc(20px + var(--safe-left));
   }
 
   .case-info__title {
@@ -819,7 +956,7 @@ ol {
   }
 
   .case-info__text {
-    margin-top: 18px;
+    margin-top: 14px;
     font-size: 15px;
   }
 
@@ -828,7 +965,7 @@ ol {
   }
 
   .case-info__live {
-    margin-top: 22px;
+    margin-top: 16px;
     min-height: 44px;
     align-items: center;
     padding-bottom: 0;
@@ -839,31 +976,17 @@ ol {
     text-decoration-thickness: 1px;
   }
 
-  .tag {
-    font-size: 11px;
-  }
-
-  .case-media {
-    padding: 0;
-    gap: 12px;
-  }
-
-  .case-media__item.is-tall {
-    width: 100%;
+  .case--mobile .slide {
+    height: auto;
+    padding: 7.5% 0;
   }
 }
 
-/* Планшет: в одной колонке остаётся воздух вокруг текста кейса. */
-@media (min-width: 640px) and (max-width: 1023px) and (min-height: 560px) {
-  .case {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .case-info__inner {
-    max-width: 560px;
-  }
-  .case-media__item.is-tall {
-    width: 72%;
+/* Как у Obys на телефоне: название слева, категории и ссылка справа. */
+@media (min-width: 480px) and (max-width: 1023px) {
+  .case--mobile .case-info {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    column-gap: 24px;
   }
 }
 
@@ -874,7 +997,8 @@ ol {
     padding-bottom: 4px;
   }
 
-  .logo {
+  .logo,
+  .site-header.is-inner .logo {
     width: 60px;
   }
 
@@ -916,8 +1040,8 @@ ol {
     padding-left: 0;
   }
 
-  .case {
-    padding-top: calc(64px + var(--safe-top));
+  .case--mobile {
+    padding-top: calc(60px + var(--safe-top));
   }
 }
 

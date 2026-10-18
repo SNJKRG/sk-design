@@ -1,7 +1,7 @@
 {
   "base": "http://localhost:4173",
-  "date": "2026-10-18T14:07:12.961Z",
-  "passed": 118,
+  "date": "2026-10-18T14:26:11.978Z",
+  "passed": 141,
   "failed": 0,
   "results": [
     {
@@ -33,11 +33,6 @@
       "name": "кейс /projects/tochno-orbit",
       "ok": true,
       "detail": "h1=\"ТОЧНО / ORBIT Showroom\", сайт=https://merch.snjkrg.tochnodev.ru, снимков 4/4"
-    },
-    {
-      "name": "ORBIT помечен «Демо»",
-      "ok": true,
-      "detail": ""
     },
     {
       "name": "кейс /projects/nakta",
@@ -111,6 +106,11 @@
     },
     {
       "name": "404 для /projects/",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "пометки «Демо» нет ни в одном кейсе",
       "ok": true,
       "detail": ""
     },
@@ -382,7 +382,12 @@
     {
       "name": "iphone13-390x844: мобильный кейс в одну колонку без переполнения",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"back\":44,\"live\":44,\"imgW\":358}"
+      "detail": "{\"hscroll\":false,\"back\":44,\"live\":44,\"imgW\":331.5,\"headerFixed\":true}"
+    },
+    {
+      "name": "iphone13-390x844: шапка закреплена в кейсе",
+      "ok": true,
+      "detail": ""
     },
     {
       "name": "iphone13-390x844: «Назад» и «Открыть сайт» ≥ 44 px",
@@ -467,7 +472,12 @@
     {
       "name": "pixel7-412x915: мобильный кейс в одну колонку без переполнения",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"back\":44,\"live\":44,\"imgW\":380}"
+      "detail": "{\"hscroll\":false,\"back\":44,\"live\":44,\"imgW\":350.1875,\"headerFixed\":true}"
+    },
+    {
+      "name": "pixel7-412x915: шапка закреплена в кейсе",
+      "ok": true,
+      "detail": ""
     },
     {
       "name": "pixel7-412x915: «Назад» и «Открыть сайт» ≥ 44 px",
@@ -500,9 +510,9 @@
       "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":30.8321,\"listFont\":12.9162}"
     },
     {
-      "name": "desktop 1280×720: кейс без переполнения и перекрытий",
+      "name": "desktop 1280×720: кейс без переполнения и перекрытий, шапка закреплена",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerFixed\":true,\"headerOverText\":false}"
     },
     {
       "name": "desktop 1440×900: без переполнения и перекрытий",
@@ -510,9 +520,9 @@
       "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":34.6875,\"listFont\":14.5312}"
     },
     {
-      "name": "desktop 1440×900: кейс без переполнения и перекрытий",
+      "name": "desktop 1440×900: кейс без переполнения и перекрытий, шапка закреплена",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerFixed\":true,\"headerOverText\":false}"
     },
     {
       "name": "desktop 1536×1024: без переполнения и перекрытий",
@@ -520,9 +530,9 @@
       "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":37,\"listFont\":15.5}"
     },
     {
-      "name": "desktop 1536×1024: кейс без переполнения и перекрытий",
+      "name": "desktop 1536×1024: кейс без переполнения и перекрытий, шапка закреплена",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerFixed\":true,\"headerOverText\":false}"
     },
     {
       "name": "desktop 1920×1080: без переполнения и перекрытий",
@@ -530,9 +540,9 @@
       "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":46.25,\"listFont\":19.375}"
     },
     {
-      "name": "desktop 1920×1080: кейс без переполнения и перекрытий",
+      "name": "desktop 1920×1080: кейс без переполнения и перекрытий, шапка закреплена",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerFixed\":true,\"headerOverText\":false}"
     },
     {
       "name": "phone 360×800: без переполнения и перекрытий",
@@ -540,9 +550,9 @@
       "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":27,\"listFont\":null}"
     },
     {
-      "name": "phone 360×800: кейс без переполнения и перекрытий",
+      "name": "phone 360×800: кейс без переполнения и перекрытий, шапка закреплена",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerFixed\":true,\"headerOverText\":false}"
     },
     {
       "name": "phone 390×844: без переполнения и перекрытий",
@@ -550,9 +560,9 @@
       "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":27,\"listFont\":null}"
     },
     {
-      "name": "phone 390×844: кейс без переполнения и перекрытий",
+      "name": "phone 390×844: кейс без переполнения и перекрытий, шапка закреплена",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerFixed\":true,\"headerOverText\":false}"
     },
     {
       "name": "phone 430×932: без переполнения и перекрытий",
@@ -560,9 +570,9 @@
       "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":27,\"listFont\":null}"
     },
     {
-      "name": "phone 430×932: кейс без переполнения и перекрытий",
+      "name": "phone 430×932: кейс без переполнения и перекрытий, шапка закреплена",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerFixed\":true,\"headerOverText\":false}"
     },
     {
       "name": "tablet 768×1024: без переполнения и перекрытий",
@@ -570,9 +580,9 @@
       "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":27,\"listFont\":null}"
     },
     {
-      "name": "tablet 768×1024: кейс без переполнения и перекрытий",
+      "name": "tablet 768×1024: кейс без переполнения и перекрытий, шапка закреплена",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerFixed\":true,\"headerOverText\":false}"
     },
     {
       "name": "phone-landscape 844×390: без переполнения и перекрытий",
@@ -580,9 +590,114 @@
       "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":24,\"listFont\":null}"
     },
     {
-      "name": "phone-landscape 844×390: кейс без переполнения и перекрытий",
+      "name": "phone-landscape 844×390: кейс без переполнения и перекрытий, шапка закреплена",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerFixed\":true,\"headerOverText\":false}"
+    },
+    {
+      "name": "кейс desktop: страница неподвижна, лента — правая половина",
+      "ok": true,
+      "detail": "{\"docScroll\":true,\"stripLeft\":768,\"stripRight\":1536,\"titleY\":530,\"blend\":\"difference\"}"
+    },
+    {
+      "name": "кейс desktop: название на центральной линии",
+      "ok": true,
+      "detail": "530px"
+    },
+    {
+      "name": "кейс desktop: шапка закреплена и инвертируется над снимками",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "кейс desktop: колесо прокручивает ленту, цикл без пустот",
+      "ok": true,
+      "detail": "покрытие 100%"
+    },
+    {
+      "name": "кейс desktop: нет ошибок",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "en: главная переведена, ссылки с префиксом /en",
+      "ok": true,
+      "detail": "Website Design & Development Studio | SK DESIGN; SF Diamonds, NAVAT Dubai, BUGU"
+    },
+    {
+      "name": "en: кейс tochno-orbit переведён",
+      "ok": true,
+      "detail": "TOCHNO / ORBIT — Fashion Showroom Website | SK DESIGN"
+    },
+    {
+      "name": "en: кейс tochno-careers переведён",
+      "ok": true,
+      "detail": "TOCHNO Careers — Developer Careers Website | SK DESIGN"
+    },
+    {
+      "name": "tr: главная переведена, ссылки с префиксом /tr",
+      "ok": true,
+      "detail": "Web Sitesi Tasarım ve Geliştirme Stüdyosu | SK DESIGN; SF Diamonds, NAVAT Dubai, BUGU"
+    },
+    {
+      "name": "tr: кейс tochno-orbit переведён",
+      "ok": true,
+      "detail": "TOCHNO / ORBIT — Giyim Showroom Sitesi | SK DESIGN"
+    },
+    {
+      "name": "tr: кейс tochno-careers переведён",
+      "ok": true,
+      "detail": "TOCHNO Kariyer — Gayrimenkul Şirketi Kariyer Sitesi | SK DESIGN"
+    },
+    {
+      "name": "переключатель языка: 3 пункта, ссылки на ту же страницу, фокус в меню",
+      "ok": true,
+      "detail": "[[\"RUРусский\",\"/projects/bugu\"],[\"ENEnglish\",\"/en/projects/bugu\"],[\"TRTürkçe\",\"/tr/projects/bugu\"]]"
+    },
+    {
+      "name": "переключатель: Escape закрывает и возвращает фокус",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "переключатель: выбор Türkçe с клавиатуры открывает ту же работу на турецком",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "переключатель: клик вне меню закрывает его",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "возврат из кейса сохраняет язык",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "SEO: у каждой страницы свой title, description и lang в исходном HTML",
+      "ok": true,
+      "detail": "Re Stom — сайт стоматологической клиники | SK DESIGN / Re Stom — Dental Clinic Website | SK DESIGN / Web Sitesi Tasarım ve Geliştirme Stüdyosu | SK DESIGN"
+    },
+    {
+      "name": "SEO: 48 уникальных title кейсов, длина ≤ 70 символов",
+      "ok": true,
+      "detail": "максимум 65"
+    },
+    {
+      "name": "языки: нет ошибок",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: кнопка языка ≥ 44 px и не наезжает на контакт",
+      "ok": true,
+      "detail": "{\"w\":44,\"h\":44,\"overlap\":false,\"inView\":true}"
+    },
+    {
+      "name": "mobile: выбор English переключает главную",
+      "ok": true,
+      "detail": ""
     },
     {
       "name": "главная не загружает full-page снимки",

@@ -1,0 +1,376 @@
+{
+  "01-sf-diamonds": {
+    "ru": { "seoTitle": "SF Diamonds — сайт ювелирного каталога | SK DESIGN" },
+    "en": {
+      "seoTitle": "SF Diamonds — Jewelry Catalog Website | SK DESIGN",
+      "title": "SF Diamonds",
+      "shortTitle": "SF Diamonds",
+      "category": "Jewelry catalog",
+      "industry": "Jewelry",
+      "type": "Catalog",
+      "summary": "A jewelry catalog with large product imagery, curated collections and help choosing a piece via messengers.",
+      "description": "The site presents diamond jewelry and watches. The home page leads from the opening ring scene to categories, a selection of pieces with prices and custom orders. Product cards and separate information pages provide the details."
+    },
+    "tr": {
+      "seoTitle": "SF Diamonds — Mücevher Kataloğu Web Sitesi | SK DESIGN",
+      "title": "SF Diamonds",
+      "shortTitle": "SF Diamonds",
+      "category": "Mücevher kataloğu",
+      "industry": "Mücevher",
+      "type": "Katalog",
+      "summary": "Büyük ürün görselleri, koleksiyonlar ve mesajlaşma uygulamaları üzerinden seçim desteği sunan bir mücevher kataloğu.",
+      "description": "Site, pırlanta mücevherleri ve saatleri tanıtıyor. Ana sayfa, yüzüklü açılış sahnesinden kategorilere, fiyatlı ürün seçkisine ve özel siparişe uzanıyor. Ayrıntılar için ürün kartları ve ayrı bilgi sayfaları bulunuyor."
+    }
+  },
+  "02-navat": {
+    "ru": { "seoTitle": "NAVAT Dubai — сайт ресторана в Дубае | SK DESIGN" },
+    "en": {
+      "seoTitle": "NAVAT Dubai — Restaurant Website in Dubai | SK DESIGN",
+      "title": "NAVAT Dubai",
+      "shortTitle": "NAVAT Dubai",
+      "category": "Restaurant in Dubai",
+      "industry": "Restaurants",
+      "type": "Brand website",
+      "summary": "A website for a teahouse in Dubai: the Silk Road story, dishes, interior and planning a visit.",
+      "description": "The English-language NAVAT Dubai site introduces Central Asian cuisine and the restaurant space. An opening caravan scene leads to the menu with prices, photos of the dining room, the brand story and contacts."
+    },
+    "tr": {
+      "seoTitle": "NAVAT Dubai — Dubai Restoran Web Sitesi | SK DESIGN",
+      "title": "NAVAT Dubai",
+      "shortTitle": "NAVAT Dubai",
+      "category": "Dubai'de restoran",
+      "industry": "Restoranlar",
+      "type": "Marka sitesi",
+      "summary": "Dubai'deki bir çayhane için site: İpek Yolu hikâyesi, yemekler, iç mekân ve ziyaret planlama.",
+      "description": "İngilizce NAVAT Dubai sitesi Orta Asya mutfağını ve restoranın mekânını tanıtıyor. Kervanla açılan giriş sahnesi; fiyatlı menüye, salon fotoğraflarına, marka hikâyesine ve iletişim bilgilerine geçiyor."
+    }
+  },
+  "04-bugu": {
+    "ru": { "seoTitle": "BUGU — сайт ресторана кыргызской кухни | SK DESIGN" },
+    "en": {
+      "seoTitle": "BUGU — Kyrgyz Restaurant Website | SK DESIGN",
+      "title": "BUGU",
+      "shortTitle": "BUGU",
+      "category": "Modern Kyrgyz cuisine",
+      "industry": "Restaurants",
+      "type": "Brand website",
+      "summary": "A website for a modern Kyrgyz cuisine restaurant with an illustrated story leading to the menu.",
+      "description": "The BUGU home page is built as a story in five scenes: fire, music, a shared table and handcraft. Illustrations and text reveal the restaurant's cultural theme; from there visitors move on to the dishes, the dining room and booking."
+    },
+    "tr": {
+      "seoTitle": "BUGU — Kırgız Mutfağı Restoran Sitesi | SK DESIGN",
+      "title": "BUGU",
+      "shortTitle": "BUGU",
+      "category": "Modern Kırgız mutfağı",
+      "industry": "Restoranlar",
+      "type": "Marka sitesi",
+      "summary": "Resimli bir hikâyeyle menüye geçen modern Kırgız mutfağı restoranı sitesi.",
+      "description": "BUGU ana sayfası beş sahnelik bir hikâye olarak kurgulandı: ateş, müzik, ortak sofra ve el emeği. Çizimler ve metin restoranın kültürel temasını anlatıyor; ziyaretçi ardından yemeklere, salona ve rezervasyona geçiyor."
+    }
+  },
+  "11-muras-nuru": {
+    "ru": { "seoTitle": "Muras Nuru BLVD — сайт жилого квартала | SK DESIGN" },
+    "en": {
+      "seoTitle": "Muras Nuru BLVD — Residential Complex Website | SK DESIGN",
+      "title": "Muras Nuru BLVD",
+      "shortTitle": "Muras Nuru",
+      "category": "Residential quarter",
+      "industry": "Real estate",
+      "type": "Residential complex website",
+      "summary": "A residential quarter website with an architectural presentation, floor plans and a way to contact the sales team.",
+      "description": "The Muras Nuru BLVD site introduces a residential quarter in Bishkek through its architecture, landscaping and cultural details. The page leads to floor plan selection, location, purchase terms and contacts."
+    },
+    "tr": {
+      "seoTitle": "Muras Nuru BLVD — Konut Projesi Web Sitesi | SK DESIGN",
+      "title": "Muras Nuru BLVD",
+      "shortTitle": "Muras Nuru",
+      "category": "Konut projesi",
+      "industry": "Gayrimenkul",
+      "type": "Konut projesi sitesi",
+      "summary": "Mimari sunum, daire planları ve satış ekibiyle iletişim imkânı sunan bir konut projesi sitesi.",
+      "description": "Muras Nuru BLVD sitesi, Bişkek'teki konut projesini mimarisi, peyzajı ve kültürel ayrıntılarıyla tanıtıyor. Sayfa; daire planı seçimine, konuma, satın alma koşullarına ve iletişim bilgilerine yönlendiriyor."
+    }
+  },
+  "07-sora": {
+    "ru": { "seoTitle": "Sora — лендинг голосового AI-менеджера | SK DESIGN" },
+    "en": {
+      "seoTitle": "Sora — Voice AI Assistant Landing Page | SK DESIGN",
+      "title": "Sora",
+      "shortTitle": "Sora",
+      "category": "Voice AI manager",
+      "industry": "IT & AI",
+      "type": "Product landing page",
+      "summary": "A website for a voice AI manager for real estate agencies and developers.",
+      "description": "The Sora landing page walks through an incoming call: the assistant answers, clarifies the request, hands it over to a manager and creates a request card. Separate sections cover supported languages, setup and testing on calls for a specific project."
+    },
+    "tr": {
+      "seoTitle": "Sora — Sesli Yapay Zekâ Asistanı Sayfası | SK DESIGN",
+      "title": "Sora",
+      "shortTitle": "Sora",
+      "category": "Sesli yapay zekâ asistanı",
+      "industry": "BT ve yapay zekâ",
+      "type": "Ürün açılış sayfası",
+      "summary": "Emlak ajansları ve gayrimenkul şirketleri için sesli yapay zekâ asistanının sitesi.",
+      "description": "Sora açılış sayfası gelen bir aramanın yolunu gösteriyor: asistan yanıt veriyor, talebi netleştiriyor, yöneticiye aktarıyor ve talep kartı oluşturuyor. Ayrı bölümler konuşma dillerini, kurulumu ve belirli bir projenin aramalarında test etmeyi anlatıyor."
+    }
+  },
+  "14-tochno-merch": {
+    "ru": {
+      "seoTitle": "ТОЧНО / ORBIT — сайт showroom одежды | SK DESIGN",
+      "category": "Showroom одежды",
+      "type": "Интерактивный showroom",
+      "summary": "Showroom одежды с каталогом, подбором образа и интерфейсом AI-примерочной.",
+      "description": "ТОЧНО / ORBIT объединяет визуальную примерочную и каталог одежды. В интерфейсе есть выбор погоды и стиля, подсказки на модели, фильтры категорий, избранное и корзина."
+    },
+    "en": {
+      "seoTitle": "TOCHNO / ORBIT — Fashion Showroom Website | SK DESIGN",
+      "title": "TOCHNO / ORBIT Showroom",
+      "shortTitle": "TOCHNO / ORBIT",
+      "category": "Clothing showroom",
+      "industry": "Fashion & e-commerce",
+      "type": "Interactive showroom",
+      "summary": "A clothing showroom with a catalog, outfit suggestions and an AI fitting room interface.",
+      "description": "TOCHNO / ORBIT combines a visual fitting room with a clothing catalog. The interface includes weather and style selection, hints on the model, category filters, favorites and a cart."
+    },
+    "tr": {
+      "seoTitle": "TOCHNO / ORBIT — Giyim Showroom Sitesi | SK DESIGN",
+      "title": "TOCHNO / ORBIT Showroom",
+      "shortTitle": "TOCHNO / ORBIT",
+      "category": "Giyim showroom'u",
+      "industry": "Moda ve e-ticaret",
+      "type": "Etkileşimli showroom",
+      "summary": "Katalog, kombin önerileri ve yapay zekâ destekli deneme kabini arayüzüne sahip bir giyim showroom'u.",
+      "description": "TOCHNO / ORBIT görsel deneme kabinini ve giyim kataloğunu bir araya getiriyor. Arayüzde hava durumu ve stil seçimi, model üzerinde ipuçları, kategori filtreleri, favoriler ve sepet bulunuyor."
+    }
+  },
+  "03-nakta": {
+    "ru": { "seoTitle": "NAKTA — сайт ресторана с бронированием | SK DESIGN" },
+    "en": {
+      "seoTitle": "NAKTA — Restaurant Website with Booking | SK DESIGN",
+      "title": "NAKTA",
+      "shortTitle": "NAKTA",
+      "category": "Restaurant website",
+      "industry": "Restaurants",
+      "type": "Brand website",
+      "summary": "A website for an ethnic restaurant with a Kyrgyz cuisine menu, banquet halls and table requests.",
+      "description": "The NAKTA site pairs the restaurant's atmosphere with practical sections for guests. Dishes, photos of the halls and table setting details introduce the place, and a form prepares a booking request in WhatsApp."
+    },
+    "tr": {
+      "seoTitle": "NAKTA — Rezervasyonlu Restoran Sitesi | SK DESIGN",
+      "title": "NAKTA",
+      "shortTitle": "NAKTA",
+      "category": "Restoran sitesi",
+      "industry": "Restoranlar",
+      "type": "Marka sitesi",
+      "summary": "Kırgız mutfağı menüsü, ziyafet salonları ve masa talebi sunan bir etnik restoran sitesi.",
+      "description": "NAKTA sitesi restoranın atmosferini misafirler için pratik bölümlerle birleştiriyor. Yemekler, salon fotoğrafları ve sofra detayları mekânı tanıtıyor; form ise WhatsApp'ta bir rezervasyon talebi hazırlıyor."
+    }
+  },
+  "05-bogatovsoft": {
+    "ru": { "seoTitle": "Bogatov Soft — корпоративный сайт IT-компании | SK DESIGN" },
+    "en": {
+      "seoTitle": "Bogatov Soft — Software Company Website | SK DESIGN",
+      "title": "Bogatov Soft",
+      "shortTitle": "Bogatov Soft",
+      "category": "Software products",
+      "industry": "IT & AI",
+      "type": "Corporate website",
+      "summary": "A website for software products for real estate developers, with use-case demos and pilot discussions.",
+      "description": "The Bogatov Soft corporate site presents products for real estate sales and related processes. Each product is explained through a working scenario, its interface and the next step: learn more, see a demo or discuss a pilot."
+    },
+    "tr": {
+      "seoTitle": "Bogatov Soft — Yazılım Şirketi Web Sitesi | SK DESIGN",
+      "title": "Bogatov Soft",
+      "shortTitle": "Bogatov Soft",
+      "category": "Yazılım ürünleri",
+      "industry": "BT ve yapay zekâ",
+      "type": "Kurumsal site",
+      "summary": "Gayrimenkul şirketlerine yönelik yazılım ürünlerinin sitesi; senaryo demoları ve pilot görüşmesi sunuyor.",
+      "description": "Bogatov Soft kurumsal sitesi, gayrimenkul satışı ve ilgili süreçler için ürünleri tanıtıyor. Her ürün bir iş senaryosu, arayüzü ve bir sonraki adımla anlatılıyor: ayrıntılar, demo ya da pilot görüşmesi."
+    }
+  },
+  "06-ai-consultant": {
+    "ru": { "seoTitle": "AI Consultant — лендинг AI-консультанта | SK DESIGN" },
+    "en": {
+      "seoTitle": "AI Consultant — Real Estate AI Landing Page | SK DESIGN",
+      "title": "AI Consultant — Bogatov Soft",
+      "shortTitle": "AI Consultant",
+      "category": "AI consultant",
+      "industry": "IT & AI",
+      "type": "Product landing page",
+      "summary": "A landing page for a real estate AI consultant showing apartment matching and client handover.",
+      "description": "The product page explains how the AI consultant answers property buyers' questions, suggests options and passes the request to a manager. It includes sample dialogues, a demo section and a description of the pilot launch."
+    },
+    "tr": {
+      "seoTitle": "AI Consultant — Emlak Yapay Zekâ Danışmanı | SK DESIGN",
+      "title": "AI Consultant — Bogatov Soft",
+      "shortTitle": "AI Consultant",
+      "category": "Yapay zekâ danışmanı",
+      "industry": "BT ve yapay zekâ",
+      "type": "Ürün açılış sayfası",
+      "summary": "Daire eşleştirme ve müşteri aktarımını gösteren, emlak alanında bir yapay zekâ danışmanının açılış sayfası.",
+      "description": "Ürün sayfası, yapay zekâ danışmanının gayrimenkul alıcılarının sorularını nasıl yanıtladığını, seçenekleri nasıl sunduğunu ve talebi yöneticiye nasıl aktardığını anlatıyor. Sayfada örnek diyaloglar, demo bölümü ve pilot sürecinin açıklaması var."
+    }
+  },
+  "08-mstarter": {
+    "ru": { "seoTitle": "M-Starter — интернет-магазин автозапчастей | SK DESIGN" },
+    "en": {
+      "seoTitle": "M-Starter — Auto Parts Online Store | SK DESIGN",
+      "title": "M-Starter",
+      "shortTitle": "M-Starter",
+      "category": "Auto parts catalog",
+      "industry": "Auto parts",
+      "type": "Online store",
+      "summary": "A store for starter and alternator parts with a catalog and an introduction to the company's own service center.",
+      "description": "The M-Starter site combines an auto parts catalog with information about a car service in Kostanay. The home page features part categories, search, account login, a cart and contact details for the store and the service."
+    },
+    "tr": {
+      "seoTitle": "M-Starter — Oto Yedek Parça Online Mağazası | SK DESIGN",
+      "title": "M-Starter",
+      "shortTitle": "M-Starter",
+      "category": "Oto yedek parça kataloğu",
+      "industry": "Oto yedek parça",
+      "type": "Online mağaza",
+      "summary": "Marş motoru ve alternatör parçaları satan, kataloğu ve kendi servis merkezinin tanıtımı olan bir mağaza.",
+      "description": "M-Starter sitesi oto yedek parça kataloğunu Kostanay'daki bir oto servisi hakkındaki bilgilerle birleştiriyor. Ana sayfada parça kategorileri, arama, hesap girişi, sepet ve mağaza ile servisin iletişim bilgileri yer alıyor."
+    }
+  },
+  "09-elit-stom-med": {
+    "ru": { "seoTitle": "Re Stom — сайт стоматологической клиники | SK DESIGN" },
+    "en": {
+      "seoTitle": "Re Stom — Dental Clinic Website | SK DESIGN",
+      "title": "Re Stom",
+      "shortTitle": "Re Stom",
+      "category": "Dental clinic",
+      "industry": "Healthcare",
+      "type": "Clinic website",
+      "summary": "A dental center website: treatment areas, doctors, special offers and appointment booking.",
+      "description": "The site at elit-stom-med.ru currently presents the Re Stom dental center in Saint Petersburg. Its structure leads from an overview of the clinic to services, the team, prices and contacts."
+    },
+    "tr": {
+      "seoTitle": "Re Stom — Diş Kliniği Web Sitesi | SK DESIGN",
+      "title": "Re Stom",
+      "shortTitle": "Re Stom",
+      "category": "Diş kliniği",
+      "industry": "Sağlık",
+      "type": "Klinik sitesi",
+      "summary": "Bir diş merkezinin sitesi: tedavi alanları, hekimler, kampanyalar ve randevu.",
+      "description": "elit-stom-med.ru adresindeki site şu anda Saint Petersburg'daki Re Stom diş merkezini tanıtıyor. Yapı, klinik hakkındaki genel bilgiden hizmetlere, ekibe, fiyatlara ve iletişime yönlendiriyor."
+    }
+  },
+  "10-tochno-careers": {
+    "ru": { "seoTitle": "Карьера в ТОЧНО — карьерный сайт девелопера | SK DESIGN" },
+    "en": {
+      "seoTitle": "TOCHNO Careers — Developer Careers Website | SK DESIGN",
+      "title": "TOCHNO Careers",
+      "shortTitle": "TOCHNO Careers",
+      "category": "Careers website",
+      "industry": "HR & careers",
+      "type": "Careers website",
+      "summary": "A careers website for a real estate developer with job areas and a story about working at the company.",
+      "description": "The site introduces candidates to the TOCHNO group of companies and leads to vacancies by area. The home page brings together company facts, geography, corporate culture and opportunities for employees."
+    },
+    "tr": {
+      "seoTitle": "TOCHNO Kariyer — Gayrimenkul Şirketi Kariyer Sitesi | SK DESIGN",
+      "title": "TOCHNO Kariyer",
+      "shortTitle": "TOCHNO Kariyer",
+      "category": "Kariyer sitesi",
+      "industry": "İK ve kariyer",
+      "type": "Kariyer sitesi",
+      "summary": "Bir gayrimenkul şirketinin kariyer sitesi: iş alanları ve şirkette çalışmaya dair bir anlatım.",
+      "description": "Site, adayları TOCHNO şirketler grubuyla tanıştırıyor ve alanlara göre açık pozisyonlara yönlendiriyor. Ana sayfada şirket bilgileri, coğrafya, kurum kültürü ve çalışanlara sunulan imkânlar bir arada."
+    }
+  },
+  "12-ushoo": {
+    "ru": { "seoTitle": "Ushoo — сайт агентства TikTok Shop | SK DESIGN" },
+    "en": {
+      "seoTitle": "Ushoo — TikTok Shop Agency Website | SK DESIGN",
+      "title": "Ushoo",
+      "shortTitle": "Ushoo",
+      "category": "TikTok Shop agency",
+      "industry": "Marketing",
+      "type": "Agency website",
+      "summary": "An English-language TikTok Shop agency website with services for sellers and influencers.",
+      "description": "The Ushoo site presents services for launching and growing stores on TikTok Shop. The sellers' home page covers areas of work, the process, examples of results and partnership terms; a separate link leads to the version for influencers."
+    },
+    "tr": {
+      "seoTitle": "Ushoo — TikTok Shop Ajansı Web Sitesi | SK DESIGN",
+      "title": "Ushoo",
+      "shortTitle": "Ushoo",
+      "category": "TikTok Shop ajansı",
+      "industry": "Pazarlama",
+      "type": "Ajans sitesi",
+      "summary": "Satıcılar ve fenomenler için hizmetler sunan İngilizce bir TikTok Shop ajansı sitesi.",
+      "description": "Ushoo sitesi TikTok Shop'ta mağaza açma ve büyütme hizmetlerini tanıtıyor. Satıcılar için ana sayfa çalışma alanlarını, süreci, sonuç örneklerini ve iş birliği koşullarını anlatıyor; ayrı bir bağlantı fenomenler için sürüme götürüyor."
+    }
+  },
+  "13-stay-safe": {
+    "ru": { "seoTitle": "Stay Safe — лендинг строительства укрытий | SK DESIGN" },
+    "en": {
+      "seoTitle": "Stay Safe — Private Shelter Construction Landing Page | SK DESIGN",
+      "title": "Stay Safe",
+      "shortTitle": "Stay Safe",
+      "category": "Private shelters",
+      "industry": "Construction",
+      "type": "Brand landing page",
+      "summary": "A landing page for private shelters presenting the approach, capabilities and construction stages.",
+      "description": "Stay Safe presents turnkey construction of private shelters. The home page goes through the company, the purpose of the space, use cases, advantages and the work process, then leads to an inquiry."
+    },
+    "tr": {
+      "seoTitle": "Stay Safe — Özel Sığınak İnşaatı Sayfası | SK DESIGN",
+      "title": "Stay Safe",
+      "shortTitle": "Stay Safe",
+      "category": "Özel sığınaklar",
+      "industry": "İnşaat",
+      "type": "Marka açılış sayfası",
+      "summary": "Yaklaşımı, olanakları ve inşaat aşamalarını tanıtan özel sığınak açılış sayfası.",
+      "description": "Stay Safe anahtar teslim özel sığınak inşaatını tanıtıyor. Ana sayfa sırasıyla şirketi, mekânın amacını, kullanım seçeneklerini, avantajları ve çalışma sürecini anlatıyor, ardından iletişime yönlendiriyor."
+    }
+  },
+  "15-parkovki-zhk": {
+    "ru": { "seoTitle": "Парковки Онлайн — сервис выбора парковки | SK DESIGN" },
+    "en": {
+      "seoTitle": "Parkovki Online — Parking Space Selection Service | SK DESIGN",
+      "title": "Parkovki Online",
+      "shortTitle": "Parkovki Online",
+      "category": "Parking space selection",
+      "industry": "Real estate",
+      "type": "Web service",
+      "summary": "A parking selection service: a catalog of residential complexes and floor-by-floor space plans.",
+      "description": "The Parkovki Online home page offers a choice of residential complexes. Each complex page shows the floors, a parking layout and a status legend: available, reserved, sold and unavailable."
+    },
+    "tr": {
+      "seoTitle": "Parkovki Online — Otopark Yeri Seçim Servisi | SK DESIGN",
+      "title": "Parkovki Online",
+      "shortTitle": "Parkovki Online",
+      "category": "Otopark yeri seçimi",
+      "industry": "Gayrimenkul",
+      "type": "Web servisi",
+      "summary": "Otopark seçim servisi: konut projeleri kataloğu ve kat kat otopark planı.",
+      "description": "Parkovki Online ana sayfası bir konut projesi seçmeyi öneriyor. Proje sayfasında katlar, otopark şeması ve durum açıklaması görünüyor: boş, rezerve, satıldı ve kullanılamaz."
+    }
+  },
+  "16-tochno-generator": {
+    "ru": { "seoTitle": "ТОЧНО Generator — каталог недвижимости | SK DESIGN" },
+    "en": {
+      "seoTitle": "TOCHNO Generator — Real Estate Catalog App | SK DESIGN",
+      "title": "TOCHNO Generator",
+      "shortTitle": "TOCHNO Generator",
+      "category": "Real estate catalog",
+      "industry": "Real estate",
+      "type": "Web application",
+      "summary": "A real estate catalog interface with project and building selection and unit filters.",
+      "description": "TOCHNO Generator shows residential projects by city and the available property types. After choosing a project, you can open its buildings or a list of units filtered by floor, status, type, number of rooms, price and area."
+    },
+    "tr": {
+      "seoTitle": "TOCHNO Generator — Gayrimenkul Katalog Uygulaması | SK DESIGN",
+      "title": "TOCHNO Generator",
+      "shortTitle": "TOCHNO Generator",
+      "category": "Gayrimenkul kataloğu",
+      "industry": "Gayrimenkul",
+      "type": "Web uygulaması",
+      "summary": "Proje ve blok seçimi ile birim filtreleri sunan bir gayrimenkul kataloğu arayüzü.",
+      "description": "TOCHNO Generator konut projelerini şehirlere ve mevcut gayrimenkul türlerine göre gösteriyor. Proje seçildikten sonra bloklara ya da kat, durum, tür, oda sayısı, fiyat ve alana göre filtrelenen birim listesine geçilebiliyor."
+    }
+  }
+}

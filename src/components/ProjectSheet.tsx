@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { PROJECTS } from '../data/projects';
+import { dict, localize, textOf, useLang } from '../i18n';
 
 type Props = {
   open: boolean;
@@ -14,6 +15,8 @@ type Props = {
 // Рендерится в body: .home фиксирована и иначе заперла бы панель под шапкой.
 export default function ProjectSheet({ open, active, onClose, onOpen }: Props) {
   const ref = useRef<HTMLDivElement>(null);
+  const lang = useLang();
+  const t = dict(lang);
 
   useEffect(() => {
     if (!open) return;
@@ -43,17 +46,17 @@ export default function ProjectSheet({ open, active, onClose, onOpen }: Props) {
   }, [open, onClose]);
 
   return createPortal(
-    <div ref={ref} className={`sheet${open ? ' is-open' : ''}`} role="dialog" aria-modal="true" aria-label="Все проекты" hidden={!open} data-own-scroll>
+    <div ref={ref} className={`sheet${open ? ' is-open' : ''}`} role="dialog" aria-modal="true" aria-label={t.allProjects} hidden={!open} data-own-scroll>
       <div className="sheet__head">
         <button type="button" className="sheet__close" onClick={onClose}>
-          Закрыть <span aria-hidden="true">✕</span>
+          {t.close} <span aria-hidden="true">✕</span>
         </button>
       </div>
       <ol className="sheet__list">
         {PROJECTS.map((p, i) => (
           <li key={p.slug} className={i === active ? 'is-active' : undefined}>
             <a
-              href={p.route}
+              href={localize(p.route, lang)}
               aria-current={i === active ? 'true' : undefined}
               onClick={(e) => {
                 if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
@@ -61,8 +64,8 @@ export default function ProjectSheet({ open, active, onClose, onOpen }: Props) {
                 onOpen(i);
               }}
             >
-              <span className="sheet__name">{p.title}</span>
-              <span className="sheet__cat">{p.category}</span>
+              <span className="sheet__name">{textOf(p, lang).title}</span>
+              <span className="sheet__cat">{textOf(p, lang).category}</span>
             </a>
           </li>
         ))}

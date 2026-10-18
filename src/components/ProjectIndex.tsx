@@ -1,6 +1,7 @@
 import { forwardRef, memo, useImperativeHandle, useLayoutEffect, useRef } from 'react';
 import { PROJECTS, PROJECT_COUNT } from '../data/projects';
 import { smoothstep, wrapDelta } from '../lib/math';
+import { dict, localize, textOf, useLang } from '../i18n';
 
 export type IndexHandle = { update: (pos: number) => void };
 
@@ -15,6 +16,7 @@ type Props = {
 // лентой от того же параметра положения, активная стоит на центральной линии
 // кадра, дальние растворяются, поэтому стык 16→1 не виден.
 const ProjectIndex = forwardRef<IndexHandle, Props>(function ProjectIndex({ active, initialPosition, onOpen, onFocusItem }, ref) {
+  const lang = useLang();
   const ringRef = useRef<HTMLOListElement>(null);
   const rows = useRef<(HTMLLIElement | null)[]>([]);
   const state = useRef({ pos: initialPosition, rowH: 33, last: [] as string[] }).current;
@@ -54,7 +56,7 @@ const ProjectIndex = forwardRef<IndexHandle, Props>(function ProjectIndex({ acti
   useImperativeHandle(ref, () => ({ update }));
 
   return (
-    <nav className="index" aria-label="Проекты" data-fade>
+    <nav className="index" aria-label={dict(lang).projects} data-fade>
       <ol className="index__list" ref={ringRef}>
         {PROJECTS.map((p, i) => (
           <li
@@ -66,7 +68,7 @@ const ProjectIndex = forwardRef<IndexHandle, Props>(function ProjectIndex({ acti
             className={i === active ? 'is-active' : undefined}
           >
             <a
-              href={p.route}
+              href={localize(p.route, lang)}
               aria-current={i === active ? 'true' : undefined}
               onFocus={() => onFocusItem(i)}
               onClick={(e) => {
@@ -75,7 +77,7 @@ const ProjectIndex = forwardRef<IndexHandle, Props>(function ProjectIndex({ acti
                 onOpen(i);
               }}
             >
-              <span className="index__name">{p.shortTitle}</span>
+              <span className="index__name">{textOf(p, lang).shortTitle}</span>
             </a>
           </li>
         ))}

@@ -7,6 +7,10 @@ import sharp from 'sharp';
 const root = path.resolve(import.meta.dirname, '..');
 const out = path.join(root, 'public', 'media');
 const portfolio = JSON.parse(await readFile(path.join(root, 'portfolio.json'), 'utf8'));
+// Переводы и SEO-заголовки: content/translations.json (ru — уточнения к portfolio.json).
+const translations = JSON.parse(await readFile(path.join(root, 'content', 'translations.json'), 'utf8'));
+const LOCALES = ['ru', 'en', 'tr'];
+const TEXT_FIELDS = ['title', 'shortTitle', 'category', 'industry', 'type', 'summary', 'description', 'seoTitle'];
 const config = JSON.parse(await readFile(path.join(root, 'site-config.json'), 'utf8'));
 
 const COVER_WIDTHS = [480, 960, 1600];
@@ -62,11 +66,7 @@ for (const [index, id] of order.entries()) {
     const v = await variants(path.join(root, shot), `${p.slug}/${name}`, CASE_WIDTHS, ['webp']);
     media.push({ ...v, caption: info?.caption ?? '', tall: v.height / v.width > 1.2 });
   }
-  projects.push({
-    id: p.id,
-    index,
-    slug: p.slug,
-    route: p.case_route,
+  const base = {
     title: p.title,
     shortTitle: SHORT[p.id] ?? p.title,
     category: p.display_category,
@@ -74,9 +74,23 @@ for (const [index, id] of order.entries()) {
     type: p.project_type,
     summary: p.summary,
     description: p.description,
+  };
+  const i18n = {};
+  for (const lang of LOCALES) {
+    const tr = translations[p.id]?.[lang] ?? {};
+    const text = lang === 'ru' ? { ...base, ...tr } : tr;
+    const missing = TEXT_FIELDS.filter((f) => !text[f]);
+    if (missing.length) throw new Error(`${p.id}: нет перевода ${lang}: ${missing.join(', ')}`);
+    i18n[lang] = Object.fromEntries(TEXT_FIELDS.map((f) => [f, text[f]]));
+  }
+  projects.push({
+    id: p.id,
+    index,
+    slug: p.slug,
+    route: p.case_route,
     url: p.source_url,
-    status: p.delivery_status,
     designCredit: p.id === '08-mstarter' ? 'copylobby.art' : null,
+    i18n,
     cover,
     media,
   });
@@ -100,30 +114,3 @@ await writeFile(
 );
 console.log('✓ src/data/projects.generated.json');
 
-// vercel.json: только существующие маршруты отдают приложение (статус 200),
-// остальные адреса получают dist/404.html со статусом 404.
-const slugs = projects.map((p) => p.slug).join('|');
-const vercel = {
-  $schema: 'https://openapi.vercel.sh/vercel.json',
-  framework: 'vite',
-  installCommand: 'npm ci',
-  buildCommand: 'npm run build',
-  outputDirectory: 'dist',
-  cleanUrls: false,
-  trailingSlash: false,
-  rewrites: [{ source: `/projects/:slug(${slugs})`, destination: '/index.html' }],
-  headers: [
-    { source: '/assets/(.*)', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] },
-    { source: '/media/(.*)', headers: [{ key: 'Cache-Control', value: 'public, max-age=604800, stale-while-revalidate=86400' }] },
-    {
-      source: '/(.*)',
-      headers: [
-        { key: 'X-Content-Type-Options', value: 'nosniff' },
-        { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-        { key: 'X-Frame-Options', value: 'DENY' },
-      ],
-    },
-  ],
-};
-await writeFile(path.join(root, 'vercel.json'), JSON.stringify(vercel, null, 2) + '\n');
-console.log('✓ vercel.json');
