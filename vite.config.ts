@@ -8,7 +8,7 @@ const LANGS: Lang[] = ['ru', 'en', 'tr'];
 const OG: Record<Lang, string> = { ru: 'ru_RU', en: 'en_US', tr: 'tr_TR' };
 // Заголовки главной и 404 совпадают с src/i18n.ts.
 const HOME: Record<Lang, [string, string]> = {
-  ru: ['Создание сайтов для бизнеса — студия SK DESIGN', 'Делаем сайты для ресторанов, застройщиков, клиник и IT-продуктов. 16 реальных работ — посмотрите кейсы и напишите нам в Telegram.'],
+  ru: ['Создание сайтов для бизнеса | Студия SK DESIGN', 'Делаем сайты для ресторанов, застройщиков, клиник и IT-продуктов. 16 реальных работ: посмотрите кейсы и напишите нам в Telegram.'],
   en: ['Website Design & Development Studio | SK DESIGN', 'We build websites for restaurants, real estate developers, clinics and tech products. Browse 16 real projects and message us on Telegram.'],
   tr: ['Web Sitesi Tasarım ve Geliştirme Stüdyosu | SK DESIGN', 'Restoranlar, gayrimenkul şirketleri, klinikler ve teknoloji ürünleri için web siteleri yapıyoruz. 16 gerçek projeyi inceleyin, Telegram’dan yazın.'],
 };

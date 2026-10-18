@@ -603,7 +603,7 @@ html.is-case body {
   color: var(--ink);
 }
 
-/* Бесконечная лента досок справа. */
+/* Бесконечная лента снимков справа, без подложек. */
 .case-strip.is-loop {
   position: absolute;
   top: 0;
@@ -621,35 +621,32 @@ html.is-case body {
   top: 0;
   left: 0;
   right: 0;
+  transform-origin: 50% 50%;
   will-change: transform;
 }
 
 .slide {
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100%;
   margin: 0;
-  background: #0e0e0f;
-}
-
-.slide--light {
-  background: #ececed;
 }
 
 .slide picture {
   display: block;
-  width: 85%;
+  width: 100%;
 }
 
 .slide.is-tall picture {
-  width: 56%;
+  width: 60%;
 }
 
 .slide img {
   width: 100%;
   height: auto;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
+  background: #f3f3f4;
+  /* Светлые снимки не сливаются с белым фоном. */
+  box-shadow: 0 0 0 1px rgba(15, 17, 24, 0.07);
 }
 
 /* Тонкие уголки на стыке половин — маркер, как скобки у Obys. */
@@ -976,9 +973,19 @@ html.is-case body {
     text-decoration-thickness: 1px;
   }
 
+  .case--mobile .case-strip {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0 calc(16px + var(--safe-right)) 0 calc(16px + var(--safe-left));
+  }
+
   .case--mobile .slide {
     height: auto;
-    padding: 7.5% 0;
+  }
+
+  .case--mobile .slide.is-tall picture {
+    width: 100%;
   }
 }
 

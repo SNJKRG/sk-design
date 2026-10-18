@@ -1,19 +1,19 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { srcSet, type CaseMedia, type ImageSet, type Project } from '../data/projects';
 import { captionText, textOf, useLang } from '../i18n';
-import { clamp } from '../lib/math';
+import { clamp, smoothstep } from '../lib/math';
 import { prefersReducedMotion, type Layout } from '../lib/useMedia';
 
-// Лента кейса. Desktop: правая половина экрана, бесконечный цикл «досок» со
-// снимками, движется от wheel/клавиатуры/touch с инерционным затуханием
-// (один параметр положения, один requestAnimationFrame). Mobile: те же доски
-// в обычном потоке документа.
+// Лента кейса. Desktop: правая половина экрана, бесконечный цикл снимков без
+// подложек, движется от wheel/клавиатуры/touch с инерционным затуханием
+// (один параметр положения, один requestAnimationFrame). Снимок на центральной
+// линии — в полный размер, соседи чуть меньше. Mobile: снимки в потоке документа.
 
-const PAD = 0.075; // поля доски от ширины ленты
-const INNER = 0.85; // ширина широкого снимка
-const INNER_TALL = 0.56; // ширина длинного full-page снимка
+const TALL = 0.6; // ширина длинного full-page снимка от ширины ленты
+const GAP = 0.035; // зазор между снимками от ширины ленты
+const SIDE_SCALE = 0.86; // масштаб невыбранных снимков
 
-const boardHeight = (m: CaseMedia, w: number) => (m.tall ? w * INNER_TALL : w * INNER) * (m.height / m.width) + 2 * w * PAD;
+const imageHeight = (m: CaseMedia, w: number) => (m.tall ? w * TALL : w) * (m.height / m.width);
 
 type Props = { project: Project; layout: Layout; label: string };
 
@@ -25,7 +25,7 @@ function Slide({ project, media, index, copy, set, eager, lazyManual }: { projec
   const sizes = '(max-width: 1023px) 92vw, 45vw';
   const srcAttr = (list: ImageSet['sources']['webp']) => (lazyManual && !eager ? { 'data-srcset': srcSet(list) } : { srcSet: srcSet(list) });
   return (
-    <figure className={`slide${index % 2 ? ' slide--light' : ' slide--dark'}${media.tall ? ' is-tall' : ''}`} data-slide={index} aria-hidden={original ? undefined : true}>
+    <figure className={`slide${media.tall ? ' is-tall' : ''}`} data-slide={index} aria-hidden={original ? undefined : true}>
       <picture>
         {set.sources.avif && <source type="image/avif" sizes={sizes} {...srcAttr(set.sources.avif)} />}
         <source type="image/webp" sizes={sizes} {...srcAttr(set.sources.webp)} />
@@ -51,8 +51,10 @@ export default function CaseStrip({ project, layout, label }: Props) {
   // Первый снимок — тот же файл, что обложка в галерее: источник не меняется при переходе.
   const sets = useMemo(() => project.media.map((m, i) => (i === 0 ? project.cover : m)), [project]);
 
-  const heights = project.media.map((m) => boardHeight(m, geo.w));
-  const setH = heights.reduce((a, b) => a + b, 0);
+  const gap = Math.round(geo.w * GAP);
+  const heights = project.media.map((m) => imageHeight(m, geo.w));
+  const slots = heights.map((h) => h + gap);
+  const setH = slots.reduce((a, b) => a + b, 0);
   const maxH = Math.max(...heights);
   // Копий столько, чтобы цикл всегда закрывал экран, включая длинные снимки.
   const copies = desktop ? Math.max(2, Math.ceil((2 * maxH + geo.h + 400) / setH)) : 1;
@@ -64,7 +66,7 @@ export default function CaseStrip({ project, layout, label }: Props) {
   {
     let acc = 0;
     for (let c = 0; c < copies; c++)
-      for (const h of heights) {
+      for (const h of slots) {
         offsets.push(acc);
         acc += h;
       }
@@ -85,7 +87,11 @@ export default function CaseStrip({ project, layout, label }: Props) {
       const y = ((((raw + A) % g.total) + g.total) % g.total) - A + centre;
       const el = els[k];
       const visible = y + h > -40 && y < vh + 40;
-      el.style.transform = `translate3d(0,${y.toFixed(2)}px,0)`;
+      // Насколько снимок удалён от центральной линии: длинный снимок, который её
+      // перекрывает, остаётся в полный размер.
+      const dist = Math.max(0, Math.abs(y + h / 2 - vh / 2) - (h / 2 - vh * 0.25)) / (vh * 0.5);
+      const scale = SIDE_SCALE + (1 - SIDE_SCALE) * (1 - smoothstep(0, 1, dist));
+      el.style.transform = `translate3d(0,${y.toFixed(2)}px,0) scale(${scale.toFixed(4)})`;
       el.style.visibility = visible ? '' : 'hidden';
       if (y + h > -vh && y < 2 * vh && !st.loaded.has(k)) {
         st.loaded.add(k);
@@ -215,7 +221,6 @@ export default function CaseStrip({ project, layout, label }: Props) {
       className={`case-strip${desktop ? ' is-loop' : ''}`}
       role="region"
       aria-label={label}
-      style={desktop ? ({ '--board-h0': `${heights[0]}px` } as React.CSSProperties) : undefined}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}

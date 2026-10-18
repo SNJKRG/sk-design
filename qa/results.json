@@ -1,7 +1,7 @@
 {
   "base": "http://localhost:4173",
-  "date": "2026-10-18T14:26:11.978Z",
-  "passed": 141,
+  "date": "2026-10-18T14:49:03.944Z",
+  "passed": 143,
   "failed": 0,
   "results": [
     {
@@ -382,7 +382,7 @@
     {
       "name": "iphone13-390x844: мобильный кейс в одну колонку без переполнения",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"back\":44,\"live\":44,\"imgW\":331.5,\"headerFixed\":true}"
+      "detail": "{\"hscroll\":false,\"back\":44,\"live\":44,\"imgW\":358,\"headerFixed\":true}"
     },
     {
       "name": "iphone13-390x844: шапка закреплена в кейсе",
@@ -472,7 +472,7 @@
     {
       "name": "pixel7-412x915: мобильный кейс в одну колонку без переполнения",
       "ok": true,
-      "detail": "{\"hscroll\":false,\"back\":44,\"live\":44,\"imgW\":350.1875,\"headerFixed\":true}"
+      "detail": "{\"hscroll\":false,\"back\":44,\"live\":44,\"imgW\":380,\"headerFixed\":true}"
     },
     {
       "name": "pixel7-412x915: шапка закреплена в кейсе",
@@ -612,7 +612,12 @@
     {
       "name": "кейс desktop: колесо прокручивает ленту, цикл без пустот",
       "ok": true,
-      "detail": "покрытие 100%"
+      "detail": "наибольший просвет 48px"
+    },
+    {
+      "name": "кейс desktop: снимок на центральной линии крупнее соседей",
+      "ok": true,
+      "detail": "1.00, 0.86"
     },
     {
       "name": "кейс desktop: нет ошибок",
@@ -627,12 +632,12 @@
     {
       "name": "en: кейс tochno-orbit переведён",
       "ok": true,
-      "detail": "TOCHNO / ORBIT — Fashion Showroom Website | SK DESIGN"
+      "detail": "TOCHNO / ORBIT: Fashion Showroom Website | SK DESIGN"
     },
     {
       "name": "en: кейс tochno-careers переведён",
       "ok": true,
-      "detail": "TOCHNO Careers — Developer Careers Website | SK DESIGN"
+      "detail": "TOCHNO Careers: Developer Careers Website | SK DESIGN"
     },
     {
       "name": "tr: главная переведена, ссылки с префиксом /tr",
@@ -642,12 +647,12 @@
     {
       "name": "tr: кейс tochno-orbit переведён",
       "ok": true,
-      "detail": "TOCHNO / ORBIT — Giyim Showroom Sitesi | SK DESIGN"
+      "detail": "TOCHNO / ORBIT: Giyim Showroom Sitesi | SK DESIGN"
     },
     {
       "name": "tr: кейс tochno-careers переведён",
       "ok": true,
-      "detail": "TOCHNO Kariyer — Gayrimenkul Şirketi Kariyer Sitesi | SK DESIGN"
+      "detail": "TOCHNO Kariyer: Gayrimenkul Şirketi Kariyer Sitesi | SK DESIGN"
     },
     {
       "name": "переключатель языка: 3 пункта, ссылки на ту же страницу, фокус в меню",
@@ -677,12 +682,17 @@
     {
       "name": "SEO: у каждой страницы свой title, description и lang в исходном HTML",
       "ok": true,
-      "detail": "Re Stom — сайт стоматологической клиники | SK DESIGN / Re Stom — Dental Clinic Website | SK DESIGN / Web Sitesi Tasarım ve Geliştirme Stüdyosu | SK DESIGN"
+      "detail": "Re Stom: сайт стоматологической клиники | SK DESIGN / Re Stom: Dental Clinic Website | SK DESIGN / Web Sitesi Tasarım ve Geliştirme Stüdyosu | SK DESIGN"
+    },
+    {
+      "name": "SEO: в title и description нет длинного тире",
+      "ok": true,
+      "detail": ""
     },
     {
       "name": "SEO: 48 уникальных title кейсов, длина ≤ 70 символов",
       "ok": true,
-      "detail": "максимум 65"
+      "detail": "максимум 64"
     },
     {
       "name": "языки: нет ошибок",
