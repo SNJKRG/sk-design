@@ -1,0 +1,598 @@
+{
+  "base": "http://localhost:4173",
+  "date": "2026-10-18T13:22:20.054Z",
+  "passed": 118,
+  "failed": 0,
+  "results": [
+    {
+      "name": "кейс /projects/sf-diamonds",
+      "ok": true,
+      "detail": "h1=\"SF Diamonds\", сайт=https://sf-diamonds.vercel.app, снимков 3/3"
+    },
+    {
+      "name": "кейс /projects/navat-dubai",
+      "ok": true,
+      "detail": "h1=\"NAVAT Dubai\", сайт=https://navat-seven.vercel.app, снимков 4/4"
+    },
+    {
+      "name": "кейс /projects/bugu",
+      "ok": true,
+      "detail": "h1=\"BUGU\", сайт=https://bugu-cavf.vercel.app, снимков 3/3"
+    },
+    {
+      "name": "кейс /projects/muras-nuru",
+      "ok": true,
+      "detail": "h1=\"Muras Nuru BLVD\", сайт=https://muras-nuru.vercel.app, снимков 4/4"
+    },
+    {
+      "name": "кейс /projects/sora",
+      "ok": true,
+      "detail": "h1=\"Sora\", сайт=https://sora.bogatovsoft.com, снимков 3/3"
+    },
+    {
+      "name": "кейс /projects/tochno-orbit",
+      "ok": true,
+      "detail": "h1=\"ТОЧНО / ORBIT Showroom\", сайт=https://merch.snjkrg.tochnodev.ru, снимков 4/4"
+    },
+    {
+      "name": "ORBIT помечен «Демо»",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "кейс /projects/nakta",
+      "ok": true,
+      "detail": "h1=\"NAKTA\", сайт=https://nakta.vercel.app, снимков 3/3"
+    },
+    {
+      "name": "кейс /projects/bogatovsoft",
+      "ok": true,
+      "detail": "h1=\"Bogatov Soft\", сайт=https://bogatovsoft.ru, снимков 3/3"
+    },
+    {
+      "name": "кейс /projects/ai-consultant",
+      "ok": true,
+      "detail": "h1=\"AI Consultant — Bogatov Soft\", сайт=https://ai-consultant.bogatovsoft.com, снимков 4/4"
+    },
+    {
+      "name": "кейс /projects/mstarter",
+      "ok": true,
+      "detail": "h1=\"M-Starter\", сайт=https://mstarter.kz, снимков 4/4"
+    },
+    {
+      "name": "M-Starter: кредит дизайна copylobby.art",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "кейс /projects/re-stom",
+      "ok": true,
+      "detail": "h1=\"Re Stom\", сайт=https://elit-stom-med.ru, снимков 4/4"
+    },
+    {
+      "name": "кейс /projects/tochno-careers",
+      "ok": true,
+      "detail": "h1=\"Карьера в ТОЧНО\", сайт=https://tochno-careers.ru, снимков 3/3"
+    },
+    {
+      "name": "кейс /projects/ushoo",
+      "ok": true,
+      "detail": "h1=\"Ushoo\", сайт=https://ushoo.vercel.app, снимков 4/4"
+    },
+    {
+      "name": "кейс /projects/stay-safe",
+      "ok": true,
+      "detail": "h1=\"Stay Safe\", сайт=https://stay-safe-eight.vercel.app, снимков 4/4"
+    },
+    {
+      "name": "кейс /projects/parkovki-online",
+      "ok": true,
+      "detail": "h1=\"Парковки Онлайн\", сайт=https://parkovki-zhk.ru, снимков 3/3"
+    },
+    {
+      "name": "кейс /projects/tochno-generator",
+      "ok": true,
+      "detail": "h1=\"ТОЧНО Generator\", сайт=https://tochno-generator.ru, снимков 6/6"
+    },
+    {
+      "name": "refresh кейса сохраняет страницу",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "404 для /projects/unknown-slug",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "404 для /about",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "404 для /projects/",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "16 уникальных маршрутов и адресов",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "кейсы: нет ошибок и 404 ассетов",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "список содержит 16 ссылок на кейсы в порядке галереи",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "в списке нет нумерации",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "контакт ведёт в Telegram",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "логотип ведёт на главную",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "удалённые области не вернулись",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "заголовок «ПРОЕКТЫ / 16» на месте",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "первая выбранная работа — SF Diamonds",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "активное превью цветное (grayscale 0, opacity 1)",
+      "ok": true,
+      "detail": "{\"href\":\"/projects/sf-diamonds\",\"g\":0,\"o\":1}"
+    },
+    {
+      "name": "неактивные превью ч/б и приглушены",
+      "ok": true,
+      "detail": "4 соседей"
+    },
+    {
+      "name": "резкий скролл: подпись, ссылка и пункт списка совпадают",
+      "ok": true,
+      "detail": "54 замеров, расхождений 0; итог NAKTA"
+    },
+    {
+      "name": "после резкого скролла цветной только активный",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "мелкие delta трекпада сдвигают ленту на одну работу",
+      "ok": true,
+      "detail": "NAKTA → Bogatov Soft"
+    },
+    {
+      "name": "один щелчок колеса выбирает следующую работу",
+      "ok": true,
+      "detail": "7 → 8"
+    },
+    {
+      "name": "ArrowUp с первой работы → 16-я (цикл 1→16)",
+      "ok": true,
+      "detail": "ТОЧНО Generator"
+    },
+    {
+      "name": "ArrowDown дважды → 2-я (цикл 16→1 без скачка)",
+      "ok": true,
+      "detail": "NAVAT Dubai"
+    },
+    {
+      "name": "главная desktop: нет ошибок и 404 ассетов",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "главная desktop: нет горизонтальной прокрутки",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "клик по центральному превью открывает выбранный кейс",
+      "ok": true,
+      "detail": "http://localhost:4173/projects/muras-nuru"
+    },
+    {
+      "name": "после перехода оверлей снят",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser Back возвращает выбранную работу",
+      "ok": true,
+      "detail": "Muras Nuru BLVD"
+    },
+    {
+      "name": "Browser Forward снова открывает кейс",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "«Назад к проектам» восстанавливает галерею",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "клик по соседнему превью открывает именно его кейс",
+      "ok": true,
+      "detail": "/projects/sora"
+    },
+    {
+      "name": "после возврата активна открывавшаяся соседняя работа",
+      "ok": true,
+      "detail": "Sora"
+    },
+    {
+      "name": "клик по названию в списке открывает кейс",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "«Смотреть кейс» открывает текущий проект",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "логотип из кейса возвращает галерею с выбранной работой",
+      "ok": true,
+      "detail": "M-Starter"
+    },
+    {
+      "name": "двойной клик + быстрый Back не оставляют оверлей или блокировку",
+      "ok": true,
+      "detail": "{\"overlay\":0,\"lock\":false,\"url\":\"/\",\"visible\":true,\"galleryOpacity\":\"1\"}"
+    },
+    {
+      "name": "Ctrl/⌘-клик открывает кейс в новой вкладке",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "фокус на пункте списка выбирает работу",
+      "ok": true,
+      "detail": "NAKTA"
+    },
+    {
+      "name": "кольцо списка: активная строка на центральной линии кадра",
+      "ok": true,
+      "detail": "0.3 px"
+    },
+    {
+      "name": "клавиатурный фокус виден",
+      "ok": true,
+      "detail": "solid"
+    },
+    {
+      "name": "Enter на пункте списка открывает кейс",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "переходы: нет ошибок",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion: стрелка выбирает работу сразу",
+      "ok": true,
+      "detail": "NAVAT Dubai"
+    },
+    {
+      "name": "reduced motion: кейс открывается без оверлея",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion: возврат работает",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion: нет ошибок",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "iphone13-390x844: touch-эмуляция активна",
+      "ok": true,
+      "detail": "{\"touch\":1,\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 \",\"coarse\":true}"
+    },
+    {
+      "name": "iphone13-390x844: свайп вверх выбирает следующую работу",
+      "ok": true,
+      "detail": "SF Diamonds → NAVAT Dubai"
+    },
+    {
+      "name": "iphone13-390x844: быстрый флик продолжает движение по инерции",
+      "ok": true,
+      "detail": "NAVAT Dubai → NAKTA (#7)"
+    },
+    {
+      "name": "iphone13-390x844: свайп не открывает кейс случайно",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "iphone13-390x844: нет горизонтальной прокрутки",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "iphone13-390x844: области нажатия ≥ 44 px",
+      "ok": true,
+      "detail": "[[\".contact\",141,44],[\".meta__link\",135,44],[\".panel__projects\",126,44]]"
+    },
+    {
+      "name": "iphone13-390x844: панель «Проекты» открыта, 16 ссылок, фокус внутри",
+      "ok": true,
+      "detail": "{\"open\":true,\"links\":16,\"focusInside\":true,\"minH\":44}"
+    },
+    {
+      "name": "iphone13-390x844: строки панели ≥ 44 px",
+      "ok": true,
+      "detail": "44px"
+    },
+    {
+      "name": "iphone13-390x844: Escape закрывает панель и возвращает фокус",
+      "ok": true,
+      "detail": "{\"hidden\":true,\"focus\":true}"
+    },
+    {
+      "name": "iphone13-390x844: кнопка «Закрыть» закрывает панель",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "iphone13-390x844: выбор в панели открывает кейс",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "iphone13-390x844: возврат из кейса восстанавливает выбор",
+      "ok": true,
+      "detail": "Ushoo"
+    },
+    {
+      "name": "iphone13-390x844: тап по кадру открывает кейс",
+      "ok": true,
+      "detail": "http://localhost:4173/projects/ushoo"
+    },
+    {
+      "name": "iphone13-390x844: мобильный кейс в одну колонку без переполнения",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"back\":44,\"live\":44,\"imgW\":358}"
+    },
+    {
+      "name": "iphone13-390x844: «Назад» и «Открыть сайт» ≥ 44 px",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "iphone13-390x844: кейс прокручивается touch-жестом",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "iphone13-390x844: нет ошибок",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "pixel7-412x915: touch-эмуляция активна",
+      "ok": true,
+      "detail": "{\"touch\":1,\"ua\":\"Mozilla/5.0 (Linux; Android 14; Pixel 7)\",\"coarse\":true}"
+    },
+    {
+      "name": "pixel7-412x915: свайп вверх выбирает следующую работу",
+      "ok": true,
+      "detail": "SF Diamonds → NAVAT Dubai"
+    },
+    {
+      "name": "pixel7-412x915: быстрый флик продолжает движение по инерции",
+      "ok": true,
+      "detail": "NAVAT Dubai → ТОЧНО / ORBIT Showroom (#6)"
+    },
+    {
+      "name": "pixel7-412x915: свайп не открывает кейс случайно",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "pixel7-412x915: нет горизонтальной прокрутки",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "pixel7-412x915: области нажатия ≥ 44 px",
+      "ok": true,
+      "detail": "[[\".contact\",141,44],[\".meta__link\",135,44],[\".panel__projects\",126,44]]"
+    },
+    {
+      "name": "pixel7-412x915: панель «Проекты» открыта, 16 ссылок, фокус внутри",
+      "ok": true,
+      "detail": "{\"open\":true,\"links\":16,\"focusInside\":true,\"minH\":44}"
+    },
+    {
+      "name": "pixel7-412x915: строки панели ≥ 44 px",
+      "ok": true,
+      "detail": "44px"
+    },
+    {
+      "name": "pixel7-412x915: Escape закрывает панель и возвращает фокус",
+      "ok": true,
+      "detail": "{\"hidden\":true,\"focus\":true}"
+    },
+    {
+      "name": "pixel7-412x915: кнопка «Закрыть» закрывает панель",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "pixel7-412x915: выбор в панели открывает кейс",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "pixel7-412x915: возврат из кейса восстанавливает выбор",
+      "ok": true,
+      "detail": "Ushoo"
+    },
+    {
+      "name": "pixel7-412x915: тап по кадру открывает кейс",
+      "ok": true,
+      "detail": "http://localhost:4173/projects/ushoo"
+    },
+    {
+      "name": "pixel7-412x915: мобильный кейс в одну колонку без переполнения",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"back\":44,\"live\":44,\"imgW\":380}"
+    },
+    {
+      "name": "pixel7-412x915: «Назад» и «Открыть сайт» ≥ 44 px",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "pixel7-412x915: кейс прокручивается touch-жестом",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "pixel7-412x915: нет ошибок",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "resize desktop → phone → landscape → desktop сохраняет выбор",
+      "ok": true,
+      "detail": "Sora → Sora → Sora → Sora"
+    },
+    {
+      "name": "смена высоты viewport: панель прижата к низу",
+      "ok": true,
+      "detail": "844 / {\"bottom\":760,\"h\":760}"
+    },
+    {
+      "name": "desktop 1280×720: без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":30.8321,\"listFont\":12.9162}"
+    },
+    {
+      "name": "desktop 1280×720: кейс без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+    },
+    {
+      "name": "desktop 1440×900: без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":34.6875,\"listFont\":14.5312}"
+    },
+    {
+      "name": "desktop 1440×900: кейс без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+    },
+    {
+      "name": "desktop 1536×1024: без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":37,\"listFont\":15.5}"
+    },
+    {
+      "name": "desktop 1536×1024: кейс без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+    },
+    {
+      "name": "desktop 1920×1080: без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":46.25,\"listFont\":19.375}"
+    },
+    {
+      "name": "desktop 1920×1080: кейс без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+    },
+    {
+      "name": "phone 360×800: без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":27,\"listFont\":null}"
+    },
+    {
+      "name": "phone 360×800: кейс без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+    },
+    {
+      "name": "phone 390×844: без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":27,\"listFont\":null}"
+    },
+    {
+      "name": "phone 390×844: кейс без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+    },
+    {
+      "name": "phone 430×932: без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":27,\"listFont\":null}"
+    },
+    {
+      "name": "phone 430×932: кейс без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+    },
+    {
+      "name": "tablet 768×1024: без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":27,\"listFont\":null}"
+    },
+    {
+      "name": "tablet 768×1024: кейс без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+    },
+    {
+      "name": "phone-landscape 844×390: без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"metaVsCorners\":false,\"logoVsCorners\":false,\"cornersInView\":true,\"titleSize\":24,\"listFont\":null}"
+    },
+    {
+      "name": "phone-landscape 844×390: кейс без переполнения и перекрытий",
+      "ok": true,
+      "detail": "{\"hscroll\":false,\"overlap\":false,\"headerOverMedia\":false}"
+    },
+    {
+      "name": "главная не загружает full-page снимки",
+      "ok": true,
+      "detail": "обложек загружено: 5"
+    },
+    {
+      "name": "главная загружает только ближайшие обложки",
+      "ok": true,
+      "detail": "sf-diamonds/cover-960.avif, navat-dubai/cover-960.avif, bugu/cover-960.avif, parkovki-online/cover-960.avif, tochno-generator/cover-960.avif"
+    }
+  ]
+}
